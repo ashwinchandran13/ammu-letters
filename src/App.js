@@ -175,7 +175,7 @@ Your Love ☀️`,
   };
 
   const getTodayDate = () => {
-    return '2025-01-10'; // For demo, you can change this to get current date
+    return '2025-01-11'; // For demo, you can change this to get current date
   };
 
   const todayData = dailyLetters[getTodayDate()] || dailyLetters['2025-01-10'];

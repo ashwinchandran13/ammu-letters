@@ -18,7 +18,7 @@ const LoveLetterWordSearch = () => {
 
   // Daily letters from Jan 10 to Feb 1
   const dailyLetters = {
-    '2025-01-10': {
+    '2025-01-11': {
       word: 'HUMMUS',
       clues: [
         'Something that you said was a favourite condiment to be eaten with anything',
@@ -72,46 +72,61 @@ letterSalutation: 'Enn Ammukutty',
         }
       ]
     },
-    '2025-01-11': {
+    '2025-01-12': {
       word: 'JASMINE',
       clues: [
-        'You introduced me to creating a smell of home',
-        'A fragrant flower you chose because you like it',
-        'An aromatic white flower often used in perfumes'
+        'You introduced me to creating a smell of home, you made the decision for it',
+        'A flower you chose because you like it',
+        'Wished to help you wear it but couldnt do so yet😔'
       ],
-      letter: `My Beautiful Soulmate,
+      letter: `pyaar kaise karte hain ? 🤔
 
-The scent of jasmine fills our home, and with it, the essence of you. You taught me that home isn't just a place—it's a feeling, a fragrance, a memory of warmth and love. Every time that scent reaches me, I close my eyes and feel you near.
-
-You have this incredible gift of turning ordinary moments into something magical. A simple flower choice became our signature, our story, our way of saying "I'm home" even when we're apart.
-
-Forever inhaling the memories of you,
-Your Love 🌸`,
-      polaroid1: '🌸',
-      polaroid2: '🌺',
-      letterImage: '🌸',
+      Meesa didn’t know. Meesa was stupid. Stupid enough to not read emotions or have one either. Matlab gaya guzra. I used to feel for people but couldn’t understand the emotions behind it. Rona hain to rona chahiye the Tak nahi pata tha.Maybe that’s why I used to cry a lot in front of you. Just by loosing myself into your eyes and usher of thoughts of how grateful I’m for this women to make me feel emotions. Kis tareeqe se tune much cheese sikhaya just by being a mirror for my own emotions, much dikhaya ki tu ye feel Kar Raha hain and it’s valid! Bas!.
+      Me became more human? Yes. And then started the thought of how blind I was to the other side of communication which was the emotion itself. Started carrying my actions and conversations based on it too. But bhai, main huggta hun frequently. And I guess that’s human. Human enough to know I will make mistakes. You made me realise that.(but huggna band karoonga promish)
+      
+      Tune kabhi bhi apne emotions mujse chupake nahi rakhi which became one of the foundations of us. However it is hurting, however it is wholesome, you’ll speak that out. You tell me to use my words to communicate made me become more realise how you yourself communicate with keeping my emotions in your mind as the biggest stake. You took care of me in the moments of hurt caused by me!
+      
+      Muuu meri Jaan☺️
+      
+      It changed my relationship with everyone around me and the biggest flex you can have is that my sis was at awe on how I was able to process emotions better than her!(yea she said that). I gave the credit to you. But she got annoyed cuz she says I give you credit for everything and nothing. But I know the truth and it will remain so.
+      
+      Any emotions I show in this lifetime will have me on the driver seat of it. I can control it now, understand it. I can’t think of a day where I won’t ever share those emotions with you. You me bacchi, you did all those things.
+      
+      The beauty you see in me is a reflection of you 🌸
+      
+      So keep adding on to that gorgeous beauty you have so I can follow you through that.
+      
+      Eternally in your debt 
+      Your paapuu`,
+letterPictureCaption: 'feelings se emotion dikha na seekh liya',
+letterSalutation: 'Me Mumu',
+      polaroid1: '/images/p3.jpeg', // Replace with image URL: 'https://example.com/photo1.jpg'
+      polaroid2: '/images/p4.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
+      polaroid1Caption: 'first train ride!',
+      polaroid2Caption: 'back at our first mcd!',
+      letterImage: '/images/l2.jpeg', // Replace with image URL: 'https://example.com/main-photo.jpg'
       songs: [
         {
-          title: 'Jasmine Dreams',
-          subtitle: 'Reminds me of your essence',
-          image: '🌸',
-          audioUrl: ''
+          title: 'You make me feel so young - Frank Sinatra',
+          subtitle: 'bachpana aagya saaheb',
+          image: '/images/4.jpeg',
+          audioUrl: '/songs/1.mp3' // Add your .mp3 file URL here
         },
         {
-          title: 'Home With You',
-          subtitle: 'Wherever you are is home',
-          image: '🏡',
-          audioUrl: ''
+          title: 'Lover - Taylor Swift',
+          subtitle: 'teri tay tay ki gaane kaise miss karoo. also proud to call you me lover',
+          image: '/images/5.jpeg',
+          audioUrl: '/songs/2.mp3' // Add your .mp3 file URL here
         },
         {
-          title: 'Sweet Memories',
-          subtitle: 'Our favorite moments together',
-          image: '✨',
-          audioUrl: ''
+          title: 'Uff Teri Ada - Shankar Mahadevan',
+          subtitle: 'ada aisi ki kabhi vishwas nahi hoti tu kaise mujhe mil gyiiii',
+          image: '/images/6.jpeg',
+          audioUrl: '/songs/3.mp3' // Add your .mp3 file URL here
         }
       ]
     },
-    '2025-01-12': {
+    '2025-01-13': {
       word: 'SUNRISE',
       clues: [
         'The moment when the world wakes up',
@@ -161,7 +176,7 @@ Your Love ☀️`,
 
   const calculateDaysLeft = () => {
     const targetDate = new Date('2025-02-01');
-    const startDate = new Date('2025-01-11');
+    const startDate = new Date('2025-01-12');
     startDate.setHours(0, 0, 0, 0);
     targetDate.setHours(0, 0, 0, 0);
     const diffTime = targetDate - startDate;
@@ -170,10 +185,11 @@ Your Love ☀️`,
   };
 
   const getTodayDate = () => {
-    return '2025-01-10'; // For demo, you can change this to get current date
+    // return new Date().toISOString().split('T')[0]; // For demo, you can change this to get current date
+    return '2025-01-12'; // For demo, you can change this to get current date
   };
 
-  const todayData = dailyLetters[getTodayDate()] || dailyLetters['2025-01-10'];
+  const todayData = dailyLetters[getTodayDate()];
   const gridSize = 8;
 
   const generateGrid = () => {
@@ -390,7 +406,7 @@ Your Love ☀️`,
           {/* Main Card */}
           <div className="max-w-md mx-auto bg-white rounded-3xl shadow-2xl p-8 text-center space-y-6 animate-fade-in">
             <Heart className="w-16 h-16 mx-auto text-pink-500 animate-pulse" />
-            <h1 className="text-4xl font-bold text-gray-800">Hello Bootiful! 💕</h1>
+            <h1 className="text-4xl font-bold text-gray-800">Ello Chundrumani! 💕</h1>
             <div className="bg-gradient-to-r from-pink-200 to-purple-200 rounded-2xl p-6">
               <p className="text-gray-700 text-lg mb-2">Days until February 1st:</p>
               <p className="text-6xl font-bold text-purple-600">{daysLeft}</p>
@@ -420,7 +436,7 @@ Your Love ☀️`,
           <div className="text-center mb-8 animate-fade-in">
             <Sparkles className="w-12 h-12 mx-auto text-pink-500 mb-4" />
             <h2 className="text-4xl font-bold text-pink-600 mb-2">Pehle mood set kare?</h2>
-            <p className="text-gray-600 text-lg">You walked into my life with a ton of good songs</p>
+            <p className="text-gray-600 text-lg">You walked into my life with a ton of great songs</p>
           </div>
 
           <div className="bg-gradient-to-br from-yellow-50 to-pink-50 rounded-3xl p-8 shadow-2xl mb-6">
@@ -503,7 +519,7 @@ Your Love ☀️`,
         <div className="max-w-2xl mx-auto">
           <div className="bg-white rounded-3xl shadow-xl p-6 mb-4">
             <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
-              Woh word dhoond, Thoda dimag ka isthimal kar 💝
+              Word dhoond le meri chundrumani 💝
             </h2>
             
             {/* Hints Section */}
