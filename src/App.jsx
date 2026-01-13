@@ -539,7 +539,7 @@ letterSalutation: 'Me saaxy aurat 💃🏽',
         <div className="max-w-2xl mx-auto">
           <div className="bg-white rounded-3xl shadow-xl p-6 mb-4">
             <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
-              Word dhoond le meri chundrumani 💝
+              Can you please find the word me goddess? 🙇🏽
             </h2>
             
             {/* Hints Section */}
