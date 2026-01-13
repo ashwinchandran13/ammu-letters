@@ -175,13 +175,13 @@ letterSalutation: 'Me saaxy aurat 💃🏽',
           title: 'Kauaʻi ʻōʻō - Parvaaz',
           subtitle: 'you went on a loop with this one',
           image: '/images/13/songcover/2.jpeg',
-          audioUrl: '/songs/2.webm' // Add your .mp3 file URL here
+          audioUrl: '/songs/13/2.webm' // Add your .mp3 file URL here
         },
         {
           title: 'Tum Tak - A.R. Rahman, Javed Ali',
           subtitle: 'will keep chasing for your happiness',
           image: '/images/13/songcover/3.jpeg',
-          audioUrl: '/songs/3.webm' // Add your .mp3 file URL here
+          audioUrl: '/songs/13/3.webm' // Add your .mp3 file URL here
         }
       ]
     }
