@@ -19,6 +19,7 @@ const LoveLetterWordSearch = () => {
   // Daily letters from Jan 10 to Feb 1
   const dailyLetters = {
     '2025-01-11': {
+      title: 'Helloww me lovvee🌸',
       word: 'HUMMUS',
       clues: [
         'Something that you said was a favourite condiment to be eaten with anything',
@@ -46,11 +47,11 @@ Your Paapuu
 `,
 letterPictureCaption: 'you changed how I perceived happiness',
 letterSalutation: 'Enn Ammukutty',
-      polaroid1: '/images/p1.jpeg', // Replace with image URL: 'https://example.com/photo1.jpg'
-      polaroid2: '/images/p2.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
+      polaroid1: '/images/polaroids/p1.jpeg', // Replace with image URL: 'https://example.com/photo1.jpg'
+      polaroid2: '/images/polaroids/p2.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
       polaroid1Caption: 'muuuuuuuu',
       polaroid2Caption: 'i wouwww uuu',
-      letterImage: '/images/l1.jpeg', // Replace with image URL: 'https://example.com/main-photo.jpg'
+      letterImage: '/images/letterpic/l1.jpeg', // Replace with image URL: 'https://example.com/main-photo.jpg'
       songs: [
         {
           title: 'Voh dekhnay Mein - Ali Zafar',
@@ -73,6 +74,7 @@ letterSalutation: 'Enn Ammukutty',
       ]
     },
     '2025-01-12': {
+      title: 'Ello Chundrumani! 💕',
       word: 'JASMINE',
       clues: [
         'You introduced me to creating a smell of home, you made the decision for it',
@@ -100,68 +102,86 @@ letterSalutation: 'Enn Ammukutty',
       Your paapuu`,
 letterPictureCaption: 'feelings se emotion dikha na seekh liya',
 letterSalutation: 'Me Mumu',
-      polaroid1: '/images/p3.jpeg', // Replace with image URL: 'https://example.com/photo1.jpg'
-      polaroid2: '/images/p4.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
+      polaroid1: '/images/polaroids/p3.jpeg', // Replace with image URL: 'https://example.com/photo1.jpg'
+      polaroid2: '/images/polaroids/p4.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
       polaroid1Caption: 'first train ride!',
       polaroid2Caption: 'back at our first mcd!',
-      letterImage: '/images/l2.jpeg', // Replace with image URL: 'https://example.com/main-photo.jpg'
+      letterImage: '/images/letterpic/l2.jpeg', // Replace with image URL: 'https://example.com/main-photo.jpg'
       songs: [
         {
           title: 'You make me feel so young - Frank Sinatra',
           subtitle: 'bachpana aagya saaheb',
-          image: '/images/4.jpeg',
+          image: '/images/songs/12/4.jpeg',
           audioUrl: '/songs/1.mp3' // Add your .mp3 file URL here
         },
         {
           title: 'Lover - Taylor Swift',
           subtitle: 'teri tay tay ki gaane kaise miss karoo. also proud to call you me lover',
-          image: '/images/5.jpeg',
+          image: '/images/songs/12/5.jpeg',
           audioUrl: '/songs/2.mp3' // Add your .mp3 file URL here
         },
         {
           title: 'Uff Teri Ada - Shankar Mahadevan',
           subtitle: 'ada aisi ki kabhi vishwas nahi hoti tu kaise mujhe mil gyiiii',
-          image: '/images/6.jpeg',
+          image: '/images/songs/12/6.jpeg',
           audioUrl: '/songs/3.mp3' // Add your .mp3 file URL here
         }
       ]
     },
     '2025-01-13': {
-      word: 'SUNRISE',
+      title: 'ello mumu 🎀',
+      word: 'ENCANTO',
       clues: [
-        'The moment when the world wakes up',
-        'How you brighten my mornings',
-        'The daily rebirth of light and hope'
+        '🎵 You like and sing songs from it',
+        '🏠 A magical family lives together in a special house.',
+        '✨ Everyone has a special power — except one girl.'
       ],
-      letter: `My Sunshine,
+      letter: `ye letter thoda explicit hone wala hain due to some 'incidents' of today so beware🔞
+      
+      we are known to have some heat between us usually in the most mundane situations at home. Let's say I'm cooking or making rotis with me or you looking over the curry together a bit with you leaning on counter, our thoughts sometime stray really easily. It starts with a look which makes me pretty much at the spot. I used get nervous from some of you previous moves like just aggresively grabbing my ass or pulling me close to you by my shorts. After with the gaze you have at the moment, things do start slipping from my hands. Next thing I know you might be on the kitchen counter or the dining chair just having our hands at the right places🌧️
 
-Every morning when the sun rises, I think of you. You are my sunrise—the light that breaks through my darkness, the warmth that starts my day, the hope that keeps me going. Without you here, mornings feel incomplete, like watching a sunrise through a closed window.
+      Just getting close to you was not an option by that point but it became such a strong desire to hold you with all my might and move my hands around slowly through your body and grabbing you by your waist and hips just to feel your heat and breath on my skin and lips. We were unravelling ourselves to each other; first through our eyes then through some words and we end with our bodies doing nastyy stuff to each other. We bare ourselves in the most vulnerable way to each other. Even with the most vile acts we do, the love we have gets pretty evident in our actions and the care we have for each other even when we let go of ourselves towards each other.
 
-But I know that soon, I'll wake up to your smile again, and that will be the most beautiful sunrise of all.
+      You might blame it on your upcoming period but I know it's more than that. I wish I could have a reason for me to admire you on any mundane moments possible but I think you lead it well and in the most unexpected most raw, most sweaty and most intense way possible.
 
-Counting down to our dawn together,
-Your Love ☀️`,
-      polaroid1: '☀️',
-      polaroid2: '🌅',
-      letterImage: '☀️',
+      Above all I knew what we were doing and how well I was stripped through my mind and my acts to reveal what I really wanted from you and how much I really needed you. I gathered the courage to open myself up in ways I couldn't image.
+
+      My true vulnerability was revealed to me the night we first spent together. I felt like I was being stripped of my skin and my mind was being exposed to you. I felt like I was being taken to a place where I was not myself and I was not sure if I was ready for it. All this while you gazing through me with your hips on mine. I knew well before that point in time through the weeks we were together, I want to love this women with all my heart and soul and I am safe with you through all my vulnerabilities and desires. I gave into to you gradually something that I thought I could never do with any human being. That is for me to act upon my love.
+
+      In a world that demanded obedience from me, choosing you feels dangerously honest.
+
+      Kissing you was my first disobedience to the world and my fist disobedience to myself. Your soft and warm lips on mine with your slow breaths on my face and the heat from your firm breasts on my chest felt like the most natural thing in the world. I felt like I was home and I was safe with you. But yeah aroused as hell🫣
+      
+      So me hottie, me baddie, me aphrodite, me goddess.. I can't wait for you to come back to me to continue exploring the depths of our vulnerabilities and desires. And yes it might involve me getting down on you with your legs shaking💋
+
+      Your eternal admirer and devotee,
+      Your Paapuu
+      `,
+      letterPictureCaption: 'feelings se emotion dikha na seekh liya',
+letterSalutation: 'Me saaxy aurat 💃🏽',
+      polaroid1: '/images/13/polaroids/1.jpeg', // Replace with image URL: 'https://example.com/photo1.jpg'
+      polaroid2: '/images/13/polaroids/2.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
+      polaroid1Caption: 'first wedding!',
+      polaroid2Caption: 'first mcfloat(fanta float😕)',
+      letterImage: '/images/13/letterpic/l.jpeg', // Replace with image URL: 'https://example.com/main-photo.jpg'
       songs: [
         {
-          title: 'Morning Light',
-          subtitle: 'You are my sunrise',
-          image: '☀️',
-          audioUrl: ''
+          title: 'Too Sweet - Hozier',
+          subtitle: 'song that catches your personality',
+          image: '/images/13/songcover/1.jpeg',
+          audioUrl: '/songs/13/1.webm' // Add your .mp3 file URL here
         },
         {
-          title: 'New Day With You',
-          subtitle: 'Every morning I think of you',
-          image: '🌅',
-          audioUrl: ''
+          title: 'Kauaʻi ʻōʻō - Parvaaz',
+          subtitle: 'you went on a loop with this one',
+          image: '/images/13/songcover/2.jpeg',
+          audioUrl: '/songs/2.webm' // Add your .mp3 file URL here
         },
         {
-          title: 'Golden Hour',
-          subtitle: 'Our perfect moments',
-          image: '✨',
-          audioUrl: ''
+          title: 'Tum Tak - A.R. Rahman, Javed Ali',
+          subtitle: 'will keep chasing for your happiness',
+          image: '/images/13/songcover/3.jpeg',
+          audioUrl: '/songs/3.webm' // Add your .mp3 file URL here
         }
       ]
     }
@@ -176,7 +196,7 @@ Your Love ☀️`,
 
   const calculateDaysLeft = () => {
     const targetDate = new Date('2025-02-01');
-    const startDate = new Date('2025-01-12');
+    const startDate = new Date('2025-01-13');
     startDate.setHours(0, 0, 0, 0);
     targetDate.setHours(0, 0, 0, 0);
     const diffTime = targetDate - startDate;
@@ -186,7 +206,7 @@ Your Love ☀️`,
 
   const getTodayDate = () => {
     // return new Date().toISOString().split('T')[0]; // For demo, you can change this to get current date
-    return '2025-01-12'; // For demo, you can change this to get current date
+    return '2025-01-13'; // For demo, you can change this to get current date
   };
 
   const todayData = dailyLetters[getTodayDate()];
@@ -406,7 +426,7 @@ Your Love ☀️`,
           {/* Main Card */}
           <div className="max-w-md mx-auto bg-white rounded-3xl shadow-2xl p-8 text-center space-y-6 animate-fade-in">
             <Heart className="w-16 h-16 mx-auto text-pink-500 animate-pulse" />
-            <h1 className="text-4xl font-bold text-gray-800">Ello Chundrumani! 💕</h1>
+            <h1 className="text-4xl font-bold text-gray-800">{todayData.title}</h1>
             <div className="bg-gradient-to-r from-pink-200 to-purple-200 rounded-2xl p-6">
               <p className="text-gray-700 text-lg mb-2">Days until February 1st:</p>
               <p className="text-6xl font-bold text-purple-600">{daysLeft}</p>
