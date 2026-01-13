@@ -157,7 +157,7 @@ letterSalutation: 'Me Mumu',
       Your eternal admirer and devotee,
       Your Paapuu
       `,
-      letterPictureCaption: 'feelings se emotion dikha na seekh liya',
+      letterPictureCaption: 'mera saara khulasa kardiya tune',
 letterSalutation: 'Me saaxy aurat 💃🏽',
       polaroid1: '/images/13/polaroids/1.jpeg', // Replace with image URL: 'https://example.com/photo1.jpg'
       polaroid2: '/images/13/polaroids/2.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
