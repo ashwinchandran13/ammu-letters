@@ -150,7 +150,7 @@ letterSalutation: 'Me Mumu',
 
       In a world that demanded obedience from me, choosing you feels dangerously honest.
 
-      Kissing you was my first disobedience to the world and my fist disobedience to myself. Your soft and warm lips on mine with your slow breaths on my face and the heat from your firm breasts on my chest felt like the most natural thing in the world. I felt like I was home and I was safe with you. But yeah aroused as hell🫣
+      Kissing you was my first disobedience to the world and my first disobedience to myself. Your soft and warm lips on mine with your slow breaths on my face and the heat from your firm breasts on my chest felt like the most natural thing in the world. I felt like I was home and I was safe with you. But yeah aroused as hell🫣
       
       So me hottie, me baddie, me aphrodite, me goddess.. I can't wait for you to come back to me to continue exploring the depths of our vulnerabilities and desires. And yes it might involve me getting down on you with your legs shaking💋
 
