@@ -158,7 +158,7 @@ letterSalutation: 'Me Mumu',
       Your Paapuu
       `,
       letterPictureCaption: 'mera saara khulasa kardiya tune',
-letterSalutation: 'Ende Ammu kochinu',
+letterSalutation: 'Me saaxy aurat 💃🏽',
       polaroid1: '/images/13/polaroids/1.jpeg', // Replace with image URL: 'https://example.com/photo1.jpg'
       polaroid2: '/images/13/polaroids/2.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
       polaroid1Caption: 'first wedding!',
@@ -214,7 +214,7 @@ letterSalutation: 'Ende Ammu kochinu',
       Your Paapuu
       `,
       letterPictureCaption: 'iss bachi ko zindagi bhar pyaar karoonga',
-letterSalutation: 'Me saaxy aurat 💃🏽',
+letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
       polaroid1: '/images/14/polaroids/1.jpg', // Replace with image URL: 'https://example.com/photo1.jpg'
       polaroid2: '/images/14/polaroids/2.png', // Replace with image URL: 'https://example.com/photo2.jpg'
       polaroid1Caption: 'ende ammu koch🙈',
