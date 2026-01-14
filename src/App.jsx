@@ -158,7 +158,7 @@ letterSalutation: 'Me Mumu',
       Your Paapuu
       `,
       letterPictureCaption: 'mera saara khulasa kardiya tune',
-letterSalutation: 'Me saaxy aurat 💃🏽',
+letterSalutation: 'Ende Ammu kochinu',
       polaroid1: '/images/13/polaroids/1.jpeg', // Replace with image URL: 'https://example.com/photo1.jpg'
       polaroid2: '/images/13/polaroids/2.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
       polaroid1Caption: 'first wedding!',
@@ -184,6 +184,62 @@ letterSalutation: 'Me saaxy aurat 💃🏽',
           audioUrl: '/songs/13/3.webm' // Add your .mp3 file URL here
         }
       ]
+    },
+    '2025-01-14': {
+      title: 'ende ammu kochee 🥰',
+      word: 'AMAL',
+      clues: [
+        '🤔 I always wondered this word was, just thought it was a name',
+        '🏠 but it means so much for you for many years, that you keep it as a key for all devices',
+        '✨ You said it the hope you kept along with you all these years'
+      ],
+      letter: `ye letter tere saare ages of life ke liye hain
+      har age jisko maine apna dil se pyaar aur usko apna hi hissa samaj liya. Bachpan se leke abhi tak tune jo faisale liye wo sab muj tak pohunchaya sahi salamat mere haatho. Main unn saare ammuo ke harr situations and struggles samajna chahoonga, aur unn sabse ek hi cheez kahoonga thank you for being so strong, fierce and brave.
+
+      Tu saare struggles ko face karke yahan tak pohunchi hain. Mujhe pata hain ki tere dosth tere life ke sabse bade support system rahe hain. I'm in debt for life to all of them. Tujhe bas dilasaa dene ke liye nahi, but tere saath teri harr problem pe tere saath rukhe and they all put effort to make you happy.
+
+      I might know only a portion of your stories on how me Ammu came to be a such amazing person with so many traits and value that I admire and uphold with pride.
+
+      You healed through all your bruises and scars to become the Ammu as I know you to be. Eventhough I would've fallen love with any of the Ammu's versions, I know you are the best version of yourself right now. I take that as a debt for me to love you more and more every day.
+
+      So me moon, I know I have a long way to go to become the best version of myself. Please take the kid inside me along with you on this journey of life for all ages.
+
+      Time may bruise us, fate may mock us, yet my devotion does not learn how to leave
+
+      I imagine us as kids walking through our paths holding hands and playing together, laughing together, crying together, growing together, learning together, and loving together.
+
+      I will always love you with all my innocence and purity that I had as a child and will keep it with me for all ages.
+
+      Always yours in all the ages we will share together,
+      Your Paapuu
+      `,
+      letterPictureCaption: 'iss bachi ko zindagi bhar pyaar karoonga',
+letterSalutation: 'Me saaxy aurat 💃🏽',
+      polaroid1: '/images/14/polaroids/1.jpg', // Replace with image URL: 'https://example.com/photo1.jpg'
+      polaroid2: '/images/14/polaroids/2.png', // Replace with image URL: 'https://example.com/photo2.jpg'
+      polaroid1Caption: 'ende ammu koch🙈',
+      polaroid2Caption: 'ende memdi koch😤',
+      letterImage: '/images/14/letterpic/l.jpg', // Replace with image URL: 'https://example.com/main-photo.jpg'
+      songs: [
+        {
+          title: 'Photograph - Ed Sheeran',
+          subtitle: 'song through all your ages',
+          image: '/images/14/songcover/1.jpg',
+          audioUrl: '/songs/14/1.webm' // Add your .mp3 file URL here
+        },
+        {
+          title: 'Ente Kannil Ninakkaai - Banglore Days',
+          subtitle: 'to the kid in you I love so much',
+          image: '/images/14/songcover/2.png',
+          audioUrl: '/songs/14/2.webm' // Add your .mp3 file URL here
+        },
+        {
+          title: 'Fly Me To The Moon - Frank Sinatra ',
+          subtitle: 'Will love you through all the ages',
+          image: '/images/14/songcover/3.png',
+          audioUrl: '/songs/14/3.webm' // Add your .mp3 file URL here
+        }
+      ]
     }
   };
 
@@ -196,7 +252,7 @@ letterSalutation: 'Me saaxy aurat 💃🏽',
 
   const calculateDaysLeft = () => {
     const targetDate = new Date('2025-02-01');
-    const startDate = new Date('2025-01-13');
+    const startDate = new Date('2025-01-14');
     startDate.setHours(0, 0, 0, 0);
     targetDate.setHours(0, 0, 0, 0);
     const diffTime = targetDate - startDate;
@@ -206,7 +262,7 @@ letterSalutation: 'Me saaxy aurat 💃🏽',
 
   const getTodayDate = () => {
     // return new Date().toISOString().split('T')[0]; // For demo, you can change this to get current date
-    return '2025-01-13'; // For demo, you can change this to get current date
+    return '2025-01-14'; // For demo, you can change this to get current date
   };
 
   const todayData = dailyLetters[getTodayDate()];
