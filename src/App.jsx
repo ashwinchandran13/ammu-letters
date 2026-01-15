@@ -15,7 +15,9 @@ const LoveLetterWordSearch = () => {
   const [celebrationKisses, setCelebrationKisses] = useState([]);
   const [selectedSong, setSelectedSong] = useState(null);
   const [audio, setAudio] = useState(null);
-
+  const [showCalendar, setShowCalendar] = useState(false);
+  const [selectedDate, setSelectedDate] = useState(null);
+  console.log('selectedDate', selectedDate);
   // Daily letters from Jan 10 to Feb 1
   const dailyLetters = {
     '2025-01-11': {
@@ -47,29 +49,29 @@ Your Paapuu
 `,
 letterPictureCaption: 'you changed how I perceived happiness',
 letterSalutation: 'Enn Ammukutty',
-      polaroid1: '/images/polaroids/p1.jpeg', // Replace with image URL: 'https://example.com/photo1.jpg'
-      polaroid2: '/images/polaroids/p2.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
+      polaroid1: '/images/11/polaroids/p1.jpeg', // Replace with image URL: 'https://example.com/photo1.jpg'
+      polaroid2: '/images/11/polaroids/p2.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
       polaroid1Caption: 'muuuuuuuu',
       polaroid2Caption: 'i wouwww uuu',
-      letterImage: '/images/letterpic/l1.jpeg', // Replace with image URL: 'https://example.com/main-photo.jpg'
+      letterImage: '/images/11/letterpic/l1.jpeg', // Replace with image URL: 'https://example.com/main-photo.jpg'
       songs: [
         {
           title: 'Voh dekhnay Mein - Ali Zafar',
           subtitle: 'Haan ye gana tere liye bana hain',
-          image: '/images/1.jpeg',
-          audioUrl: '/songs/dekhnay.mp3' // Add your .mp3 file URL here
+          image: '/images/11/songcover/1.jpeg',
+          audioUrl: '/songs/11/1.mp3' // Add your .mp3 file URL here
         },
         {
           title: 'Cherry Wine - Hozier',
           subtitle: 'yep you are my cherry wine',
-          image: '/images/2.jpeg',
-          audioUrl: '/songs/cherry-wine.mp3' // Add your .mp3 file URL here
+          image: '/images/11/songcover/2.jpeg',
+          audioUrl: '/songs/11/2.mp3' // Add your .mp3 file URL here
         },
         {
           title: 'Que Sera, Sera - Doris Day',
           subtitle: 'was feeling too much when you were singing it',
-          image: '/images/3.jpeg',
-          audioUrl: '/songs/que-sara.mp3' // Add your .mp3 file URL here
+          image: '/images/11/songcover/3.jpeg',
+          audioUrl: '/songs/11/3.mp3' // Add your .mp3 file URL here
         }
       ]
     },
@@ -102,29 +104,29 @@ letterSalutation: 'Enn Ammukutty',
       Your paapuu`,
 letterPictureCaption: 'feelings se emotion dikha na seekh liya',
 letterSalutation: 'Me Mumu',
-      polaroid1: '/images/polaroids/p3.jpeg', // Replace with image URL: 'https://example.com/photo1.jpg'
-      polaroid2: '/images/polaroids/p4.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
+      polaroid1: '/images/12/polaroids/p3.jpeg', // Replace with image URL: 'https://example.com/photo1.jpg'
+      polaroid2: '/images/12/polaroids/p4.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
       polaroid1Caption: 'first train ride!',
       polaroid2Caption: 'back at our first mcd!',
-      letterImage: '/images/letterpic/l2.jpeg', // Replace with image URL: 'https://example.com/main-photo.jpg'
+      letterImage: '/images/12/letterpic/l2.jpeg', // Replace with image URL: 'https://example.com/main-photo.jpg'
       songs: [
         {
           title: 'You make me feel so young - Frank Sinatra',
           subtitle: 'bachpana aagya saaheb',
-          image: '/images/songs/12/4.jpeg',
-          audioUrl: '/songs/1.mp3' // Add your .mp3 file URL here
+          image: '/images/12/songcover/4.jpeg',
+          audioUrl: '/songs/12/1.mp3' // Add your .mp3 file URL here
         },
         {
           title: 'Lover - Taylor Swift',
           subtitle: 'teri tay tay ki gaane kaise miss karoo. also proud to call you me lover',
-          image: '/images/songs/12/5.jpeg',
-          audioUrl: '/songs/2.mp3' // Add your .mp3 file URL here
+          image: '/images/12/songcover/5.jpeg',
+          audioUrl: '/songs/12/2.mp3' // Add your .mp3 file URL here
         },
         {
           title: 'Uff Teri Ada - Shankar Mahadevan',
           subtitle: 'ada aisi ki kabhi vishwas nahi hoti tu kaise mujhe mil gyiiii',
-          image: '/images/songs/12/6.jpeg',
-          audioUrl: '/songs/3.mp3' // Add your .mp3 file URL here
+          image: '/images/12/songcover/6.jpeg',
+          audioUrl: '/songs/12/3.mp3' // Add your .mp3 file URL here
         }
       ]
     },
@@ -191,7 +193,7 @@ letterSalutation: 'Me saaxy aurat 💃🏽',
       clues: [
         '🤔 I always wondered this word was, just thought it was a name',
         '🏠 but it means so much for you for many years, that you keep it as a key for all devices',
-        '✨ You said it the hope you kept along with you all these years'
+        '✨ You said it is hope that you kept along with you all these years'
       ],
       letter: `ye letter tere saare ages of life ke liye hain
       har age jisko maine apna dil se pyaar aur usko apna hi hissa samaj liya. Bachpan se leke abhi tak tune jo faisale liye wo sab muj tak pohunchaya sahi salamat mere haatho. Main unn saare ammuo ke harr situations and struggles samajna chahoonga, aur unn sabse ek hi cheez kahoonga thank you for being so strong, fierce and brave.
@@ -240,8 +242,69 @@ letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
           audioUrl: '/songs/14/3.mp4' // Add your .mp3 file URL here
         }
       ]
+    },
+    '2025-01-15': {
+      title: 'Hi me Moooon 🥰',
+      word: 'HOME',
+      clues: [
+        '🤔 I thought it was just a place but the true meaning was defined by you',
+        '🥰 It awaits your return though and so do I eagerly',
+        '✨ For you to return and make it whole again and call it our...'
+      ],
+      letter: `this letter for the first home we built together
+
+      Never in centuries I would've thought I would be with someone choosing decor, arranging furniture, decorating the walls, arranging groceries in fridge, setting up kitchen counters, hanging up photos, cleaning the house, cooking every single day, making coffee and having it cozly in bed before the day starts, having a place to play around, to have a place to make love, to cry, shout, laugh, sing, scream, dance, drink, and everything in between.
+
+      You Made this oppurtunity for me to live a life I never thought I would live. Within a month of meeting you, we had moved into our first home together. And as I look back on how we built this home together and compare the current state of me alone in this house, makes me realise it was never about making a house livable but it's about the people who I live with which makes it a home.
+
+      You Mu, you held it all together and made it a home. Currently it might be a real pristine house but that's it. No noise, no scented candles, no dead skins under table, no balls of hair in bathroom or floors, no music, no movies, no laughter, no calling paaputiii from the bedroom as you come in running inside the kitchen with loud and heavy footsteps to hug me from behind. No more of those.
+
+      I'm happy crying looking all around the house and thinking of how we built this home together. All those memories eventhough we were juggling a load of stress and struggles, we still managed to make it a home. Now I imagine what we can do when we actually build something of our own together.
+
+      Aaj ghar clean karne ka yehi maksath tha so that you can see the best of it and compare it to how we began.
+
+      So me moon
+
+      All I need to see you when I wake up and before the day comes to an end - that's what I'll call home.
+
+      I love you so much Ammu. Thanks for letting me crash your place😛 and making me part of it. As you said you never expected me to join in but I knew you were the one and I all I wanted to do was walk every step with you through death.
+
+      Awaiting your return to make me and this house whole again to call it our home,
+
+      Your Paapuu
+      `,
+      letterPictureCaption: 'we built this home together',
+letterSalutation: 'Me world🌍',
+      polaroid1: '/images/15/polaroids/1.jpeg', // Replace with image URL: 'https://example.com/photo1.jpg'
+      polaroid2: '/images/15/polaroids/2.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
+      polaroid1Caption: 'waiting for you to come🙈',
+      polaroid2Caption: 'to make it whole again❤️',
+      letterImage: '/images/15/letterpic/l.mp4', // Replace with image URL: 'https://example.com/main-photo.jpg'
+      songs: [
+        {
+          title: 'Night Changes - One Direction',
+          subtitle: 'for the memories we both had',
+          image: '/images/15/songcover/1.jpeg',
+          audioUrl: '/songs/15/1.webm' // Add your .mp3 file URL here
+        },
+        {
+          title: 'Tere Bina - A R Rahman',
+          subtitle: 'to the person I call my ooru',
+          image: '/images/15/songcover/2.mp4',
+          audioUrl: '/songs/15/2.webm' // Add your .mp3 file URL here
+        },
+        {
+          title: 'Pal Pal Dilke Pass - Kishore Kumar ',
+          subtitle: 'Will love you through all the ages',
+          image: '/images/15/songcover/3.jpeg',
+          audioUrl: '/songs/15/3.webm' // Add your .mp3 file URL here
+        }
+      ]
     }
   };
+
+  // Initialize todayData with the default letter data
+  const [todayData, setTodayData] = useState(dailyLetters['2025-01-15']);
 
   const wrongEmojis = ['💩', '🐼', '😠', '😢', '😰', '😭'];
   const loveEmojis = ['😍', '🥰', '💕', '😘', '❤️', '💝', '🌟', '✨', '💖', '💗'];
@@ -252,7 +315,7 @@ letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
 
   const calculateDaysLeft = () => {
     const targetDate = new Date('2025-02-01');
-    const startDate = new Date('2025-01-14');
+    const startDate = new Date('2025-01-15');
     startDate.setHours(0, 0, 0, 0);
     targetDate.setHours(0, 0, 0, 0);
     const diffTime = targetDate - startDate;
@@ -260,12 +323,19 @@ letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
     setDaysLeft(diffDays);
   };
 
-  const getTodayDate = () => {
-    // return new Date().toISOString().split('T')[0]; // For demo, you can change this to get current date
-    return '2025-01-14'; // For demo, you can change this to get current date
+  const getTodayData = () => {
+    console.log('Getting today data for selectedDate:', selectedDate);
+    if (selectedDate) return dailyLetters[selectedDate];
+    // return dailyLetters[new Date().toISOString().split('T')[0]]; // For production, use current date
+    return dailyLetters['2025-01-15']; // For demo, you can change this to get current date
   };
 
-  const todayData = dailyLetters[getTodayDate()];
+  // Update todayData on mount and whenever selectedDate changes
+  useEffect(() => {
+    const data = getTodayData();
+    console.log('Setting todayData:', data);
+    setTodayData(data);
+  }, [selectedDate]); // Runs on mount (when selectedDate is null) and whenever selectedDate changes
   const gridSize = 8;
 
   const generateGrid = () => {
@@ -274,6 +344,7 @@ letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
     );
 
     const word = todayData.word;
+    console.log('word', word);
     const directions = [
       { dx: 0, dy: 1 },  // horizontal
       { dx: 1, dy: 0 },  // vertical
@@ -291,7 +362,22 @@ letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
     return grid;
   };
 
-  const [grid] = useState(generateGrid());
+  const [grid, setGrid] = useState(generateGrid());
+
+  // Regenerate grid whenever todayData changes
+  useEffect(() => {
+    if (todayData) {
+      console.log('Regenerating grid for new date with word:', todayData.word);
+      setGrid(generateGrid());
+      // Reset game state when date changes
+      setSelectedCells([]);
+      setLoveMeter(0);
+      setCluesShown(0);
+      setWordRevealed(false);
+      setWordFound(false);
+      setCorrectLettersCount(0);
+    }
+  }, [todayData]);
 
   const getCorrectCellsInSelection = (cells) => {
     const wordCells = [];
@@ -425,6 +511,43 @@ letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
     setAudio(null);
   };
 
+  const getAvailableDates = () => {
+    const startDate = new Date('2025-01-10');
+    const endDate = new Date('2025-02-01');
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    
+    const dates = [];
+    const current = new Date(startDate);
+    
+    while (current <= endDate) {
+      const dateStr = current.toISOString().split('T')[0];
+      // Only include dates up to today or all dates if you want to see future ones
+      // Change to `current <= endDate` to show all dates regardless of today
+      if (current <= today && dailyLetters[dateStr]) {
+        dates.push({
+          date: new Date(current),
+          dateStr: dateStr,
+          available: true
+        });
+      } else if (dailyLetters[dateStr]) {
+        dates.push({
+          date: new Date(current),
+          dateStr: dateStr,
+          available: false // Future dates
+        });
+      }
+      current.setDate(current.getDate() + 1);
+    }
+    return dates;
+  };
+
+  const handleDateSelect = (dateStr) => {
+    console.log('dateStr', dateStr);
+    setSelectedDate(dateStr);
+    setShowCalendar(false);
+  };
+
   const handleSongSelect = (song) => {
     setSelectedSong(song);
   };
@@ -458,22 +581,92 @@ letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
     return texts[Math.min(loveMeter, texts.length - 1)];
   };
 
+  // Helper function to check if a file is a video
+  const isVideoFile = (url) => {
+    if (!url) return false;
+    const videoExtensions = ['.mp4', '.webm', '.ogg', '.mov'];
+    return videoExtensions.some(ext => url.toLowerCase().endsWith(ext));
+  };
+
+  // Helper component to render either image or video
+  const MediaElement = ({ src, alt, className }) => {
+    if (isVideoFile(src)) {
+      return (
+        <video 
+          src={src} 
+          alt={alt}
+          className={className}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+      );
+    }
+    return <img src={src} alt={alt} className={className} />;
+  };
+
   // Home Page
   if (currentPage === 'home') {
+    const availableDates = getAvailableDates();
+    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex items-center justify-center p-4">
         <div className="max-w-4xl w-full">
+        {showCalendar && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+              <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-10 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                <div className="flex justify-between items-center mb-6">
+                  <h3 className="text-2xl md:text-4xl font-bold text-pink-600">Choose a Date</h3>
+                  <button 
+                    onClick={() => setShowCalendar(false)}
+                    className="text-gray-500 hover:text-gray-700 text-3xl"
+                  >
+                    ×
+                  </button>
+                </div>
+                <p className="text-gray-600 mb-6 text-sm md:text-base">Select a date to replay that day's game</p>
+                
+                <div className="grid grid-cols-3 md:grid-cols-4 gap-3 md:gap-4">
+                  {availableDates.map((item) => {
+                    const day = item.date.getDate();
+                    const month = monthNames[item.date.getMonth()];
+                    console.log('item.dateStr', item.dateStr);
+                    console.log('item.available', item.available);
+                    return (
+                      <button
+                        key={item.dateStr}
+                        onClick={() => item.available && handleDateSelect(item.dateStr)}
+                        disabled={!item.available}
+                        className={`p-4 md:p-6 rounded-2xl transition-all ${
+                          item.available
+                            ? 'bg-gradient-to-br from-pink-200 to-purple-200 hover:from-pink-300 hover:to-purple-300 cursor-pointer shadow-lg hover:shadow-xl transform hover:scale-105'
+                            : 'bg-gray-100 cursor-not-allowed opacity-50'
+                        } ${selectedDate === item.dateStr ? 'ring-4 ring-pink-500' : ''}`}
+                      >
+                        <div className="text-center">
+                          <div className="text-2xl md:text-4xl font-bold text-gray-800">{day}</div>
+                          <div className="text-xs md:text-sm text-gray-600 font-medium">{month}</div>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          )}
           {/* Polaroid Photos */}
           <div className="flex justify-center gap-6 mb-8">
             <div className="bg-white p-4 shadow-xl transform -rotate-6 hover:-rotate-3 transition-transform">
               <div className="bg-gradient-to-br from-pink-100 to-purple-100 w-48 h-48 flex items-center justify-center overflow-hidden">
-                <img src={todayData.polaroid1} alt="Memory 1" className="w-full h-full object-cover" />
+                <MediaElement src={todayData.polaroid1} alt="Memory 1" className="w-full h-full object-cover" />
               </div>
               <p className="text-center mt-2 text-gray-600 italic text-sm">{todayData.polaroid1Caption}</p>
             </div>
             <div className="bg-white p-4 shadow-xl transform rotate-6 hover:rotate-3 transition-transform">
               <div className="bg-gradient-to-br from-purple-100 to-blue-100 w-48 h-48 flex items-center justify-center overflow-hidden">
-                <img src={todayData.polaroid2} alt="Memory 2" className="w-full h-full object-cover" />
+                <MediaElement src={todayData.polaroid2} alt="Memory 2" className="w-full h-full object-cover" />
               </div>
               <p className="text-center mt-2 text-gray-600 italic text-sm">{todayData.polaroid2Caption}</p>
             </div>
@@ -483,6 +676,12 @@ letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
           <div className="max-w-md mx-auto bg-white rounded-3xl shadow-2xl p-8 text-center space-y-6 animate-fade-in">
             <Heart className="w-16 h-16 mx-auto text-pink-500 animate-pulse" />
             <h1 className="text-4xl font-bold text-gray-800">{todayData.title}</h1>
+            <button
+              onClick={() => setShowCalendar(true)}
+              className="w-full bg-gradient-to-r from-purple-400 to-pink-400 text-white font-semibold py-3 px-6 rounded-full hover:from-purple-500 hover:to-pink-500 transition-all duration-300 shadow-md text-sm md:text-base mb-4"
+            >
+              📅 {selectedDate ? `Selected: ${new Date(selectedDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric' })}` : 'Ab tak ke sare letters yahan'}
+            </button>
             <div className="bg-gradient-to-r from-pink-200 to-purple-200 rounded-2xl p-6">
               <p className="text-gray-700 text-lg mb-2">Days until February 1st:</p>
               <p className="text-6xl font-bold text-purple-600">{daysLeft}</p>
@@ -530,7 +729,7 @@ letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
                   }`}
                 >
                   <div className="bg-gradient-to-br from-pink-200 to-purple-200 rounded-xl aspect-square flex items-center justify-center mb-3 overflow-hidden">
-                    <img src={song.image} alt={song.title} className="w-full h-full object-cover" />
+                    <MediaElement src={song.image} alt={song.title} className="w-full h-full object-cover" />
                   </div>
                   <h3 className="font-bold text-gray-800 mb-1">{song.title}</h3>
                   <p className="text-sm text-gray-600">{song.subtitle}</p>
@@ -561,7 +760,7 @@ letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
           </div>
         </div>
 
-        <style jsx>{`
+        <style>{`
           .delay-75 {
             animation-delay: 0.075s;
           }
@@ -595,7 +794,7 @@ letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
         <div className="max-w-2xl mx-auto">
           <div className="bg-white rounded-3xl shadow-xl p-6 mb-4">
             <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
-              Can you please find the word me goddess? 🙇🏽
+              Can you please find the word me Amore? 🙇🏽
             </h2>
             
             {/* Hints Section */}
@@ -685,7 +884,7 @@ letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
           </div>
         </div>
 
-        <style jsx>{`
+        <style>{`
           @keyframes rain {
             0% { 
               transform: translateY(0) rotate(0deg); 
@@ -728,7 +927,7 @@ letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
           {/* Main Polaroid with Letter Image */}
           <div className="bg-white p-4 shadow-lg mx-auto max-w-sm transform rotate-2">
             <div className="bg-gradient-to-br from-pink-200 to-purple-200 aspect-square flex items-center justify-center overflow-hidden">
-                <img src={todayData.letterImage} alt="Our Love" className="w-full h-full object-cover" />
+                <MediaElement src={todayData.letterImage} alt="Our Love" className="w-full h-full object-cover" />
             </div>
             <p className="text-center mt-2 text-gray-600 italic text-sm">{todayData.letterPictureCaption}</p>
           </div>
@@ -765,7 +964,7 @@ letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
           </div>
         </div>
 
-        <style jsx>{`
+        <style>{`
           @keyframes float {
             0%, 100% { transform: translateY(0) rotate(0deg); opacity: 1; }
             50% { transform: translateY(-100px) rotate(180deg); opacity: 0.5; }
