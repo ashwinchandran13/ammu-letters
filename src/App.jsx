@@ -251,11 +251,11 @@ letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
         '🥰 It awaits your return though and so do I eagerly',
         '✨ For you to return and make it whole again and call it our...'
       ],
-      letter: `this letter for the first home we built together
+      letter: `this letter is for the first home we built together
 
       Never in centuries I would've thought I would be with someone choosing decor, arranging furniture, decorating the walls, arranging groceries in fridge, setting up kitchen counters, hanging up photos, cleaning the house, cooking every single day, making coffee and having it cozly in bed before the day starts, having a place to play around, to have a place to make love, to cry, shout, laugh, sing, scream, dance, drink, and everything in between.
 
-      You Made this oppurtunity for me to live a life I never thought I would live. Within a month of meeting you, we had moved into our first home together. And as I look back on how we built this home together and compare the current state of me alone in this house, makes me realise it was never about making a house livable but it's about the people who I live with which makes it a home.
+      You made this oppurtunity for me to live a life I never thought I would live. Within a month of meeting you, we had moved into our first home together. And as I look back on how we built this home together and compare the current state of me alone in this house, makes me realise it was never about making a house livable but it's about the people who I live with which makes it a home.
 
       You Mu, you held it all together and made it a home. Currently it might be a real pristine house but that's it. No noise, no scented candles, no dead skins under table, no balls of hair in bathroom or floors, no music, no movies, no laughter, no calling paaputiii from the bedroom as you come in running inside the kitchen with loud and heavy footsteps to hug me from behind. No more of those.
 
@@ -267,7 +267,7 @@ letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
 
       All I need to see you when I wake up and before the day comes to an end - that's what I'll call home.
 
-      I love you so much Ammu. Thanks for letting me crash your place😛 and making me part of it. As you said you never expected me to join in but I knew you were the one and I all I wanted to do was walk every step with you through death.
+      I love you so much Ammu. Thanks for letting me crash your place😛 and making me part of it. As you said you never expected me to join in but I knew you were the One and all I wanted to do was walk every step with you through death.
 
       Awaiting your return to make me and this house whole again to call it our home,
 
@@ -295,7 +295,7 @@ letterSalutation: 'Me world🌍',
         },
         {
           title: 'Pal Pal Dilke Pass - Kishore Kumar ',
-          subtitle: 'Will love you through all the ages',
+          subtitle: 'For all the love you brought home with you',
           image: '/images/15/songcover/3.jpeg',
           audioUrl: '/songs/15/3.webm' // Add your .mp3 file URL here
         }
