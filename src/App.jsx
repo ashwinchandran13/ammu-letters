@@ -343,7 +343,7 @@ letterSalutation: 'Me world🌍',
       your fellow companion traveller for life,
       Your Paapuu
       `,
-      letterPictureCaption: 'we built this home together',
+      letterPictureCaption: 'ammini witnessed how events unfold in life',
 letterSalutation: 'Mumuuuuuuuuu🌸',
       polaroid1: '/images/16/polaroids/1.mp4', // Replace with image URL: 'https://example.com/photo1.jpg'
       polaroid2: '/images/16/polaroids/2.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
