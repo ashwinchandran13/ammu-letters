@@ -300,11 +300,81 @@ letterSalutation: 'Me world🌍',
           audioUrl: '/songs/15/3.webm' // Add your .mp3 file URL here
         }
       ]
+    },
+    '2025-01-16': {
+      title: 'elloo boo🥰',
+      word: 'AMMINI',
+      clues: [
+        '🤔 she helped me see you every day from the very beginning',
+        '🥰 she helped us cover distances which she has never travelled before',
+        '✨ she litterally saw us cry, fight, laugh, sing, love and grow together'
+      ],
+      letter: `sometimes I think the one big factor that helped us to form a strong bond in a really short amount of time was the travels we took together.
+
+      Yes, travels pushed us to great limits. We faced a lot of obstacles, a lot of uncomfortable decisions, a buttload of uncertainties but still we managed to push it through and grow together due to all that.
+
+      Your job made me also see the places that I've never seen before. It pushed me to be better with my job and having time to spent with you too. I also learned a lot about myself and my capabilities and limitations.
+
+      But wo sab chod, tune mujhe wo oppurtunity dia tere saath travel karne. Tere liye muje jo kuch bhi karna chahtha tha, uske liye tune mujhe help karne ke liye allow kiya. I know that I'm not that easy to be with and that too while you were on you job but still took me with you.
+
+      Haan maine thoda easy banaya cheeze by being your chauffeur which is quite literally true; You said that to a school 😭 jinhone driver ko chay pilaya. But at the end of the day, me waiting on you at the school with a big ishmile on my face and seeing you coming out of the school with a big ishmile on your face made me feel like I was the luckiest man on earth for me my lady is walking right towards me after a tiring day at work. The only thing that I wanted to keep with me was foood to feed you and see you more happy and relaxed.
+      
+      Because of these travels mujhe tere itne saare passindida cheezo ke baare pata chala which you were also discovering yourself. Phir kuch humare routines bhi bane. Ghee podi idli from social kitchen and karikku peena became the thing to do in Palakkad if you remember.
+
+      I know not everything was changi se but koiii naaa cuz travelling is supposed to be the best teacher. The more we travel together, the more we learn about each other and the more we grow together.
+      
+      Your job made me meet you my love. Your job also made path for us to grow together by throwing the mighty obstacle of distances to be covered.
+
+      Haan jab tu jaathi thi mere bina bhi, Ammini and Kinkini both do their part for me to say goobye when you leave for your job.
+
+      Humne ghanto bithaye hain Amini main and also Kinkini(remember Palakkad ride which was soooo epic😵‍💫) and unhi travels main bohot paisa aur energy udaya hain but looking back to it for me it was allllll worth it.
+
+      Humne Pahade dekhe, beaches dekhe, temples gaye and at last it became a median for my proposal. Ammini kept your b'day gifts, our ring, our adventure box allll safely. Ammini witnessed you kissing me on my cheeks for the first time. Ammini saw golden hour sunset with us in the beach of Alappuzha. She will be a part of our life for ages to come.
+
+      Thank you for all oppurtunities that you gave me to see you in distant places and different situations. Thank you for all the memories that we have made in these travels. Thank you for all the patience and love that you showed me through all these travels. 
+
+      So me amore
+      Me Mumu
+
+      We carried our home together to every distant place we went to.
+
+      I'm waiting for you to come back to me and to continue our travels together.
+
+      your fellow companion traveller for life,
+      Your Paapuu
+      `,
+      letterPictureCaption: 'we built this home together',
+letterSalutation: 'Mumuuuuuuuuu🌸',
+      polaroid1: '/images/16/polaroids/1.mp4', // Replace with image URL: 'https://example.com/photo1.jpg'
+      polaroid2: '/images/16/polaroids/2.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
+      polaroid1Caption: 'First Road Trip for Days!!🙈',
+      polaroid2Caption: 'to sunsets we witnessed❤️',
+      letterImage: '/images/16/letterpic/l.mp4', // Replace with image URL: 'https://example.com/main-photo.jpg'
+      songs: [
+        {
+          title: 'Wo Ladki Hain Kahan - Dil Chahta Hai',
+          subtitle: 'me fellow traveller always keeps it with her harkathes',
+          image: '/images/16/songcover/1.mp4',
+          audioUrl: '/songs/16/1.webm' // Add your .mp3 file URL here
+        },
+        {
+          title: 'Aao Naa - Udit Narayan',
+          subtitle: 'interestingly the twirl and the tongue comes out as a standard from the very beginning',
+          image: '/images/16/songcover/2.mp4',
+          audioUrl: '/songs/16/2.webm' // Add your .mp3 file URL here
+        },
+        {
+          title: 'Rude - MAGIC!',
+          subtitle: 'song I have to sing to your pappaji to marry yo rude ass',
+          image: '/images/16/songcover/3.mp4',
+          audioUrl: '/songs/16/3.webm' // Add your .mp3 file URL here
+        }
+      ]
     }
   };
 
   // Initialize todayData with the default letter data
-  const [todayData, setTodayData] = useState(dailyLetters['2025-01-15']);
+  const [todayData, setTodayData] = useState(dailyLetters['2025-01-16']);
 
   const wrongEmojis = ['💩', '🐼', '😠', '😢', '😰', '😭'];
   const loveEmojis = ['😍', '🥰', '💕', '😘', '❤️', '💝', '🌟', '✨', '💖', '💗'];
@@ -315,7 +385,7 @@ letterSalutation: 'Me world🌍',
 
   const calculateDaysLeft = () => {
     const targetDate = new Date('2025-02-01');
-    const startDate = new Date('2025-01-15');
+    const startDate = new Date('2025-01-16');
     startDate.setHours(0, 0, 0, 0);
     targetDate.setHours(0, 0, 0, 0);
     const diffTime = targetDate - startDate;
@@ -327,7 +397,7 @@ letterSalutation: 'Me world🌍',
     console.log('Getting today data for selectedDate:', selectedDate);
     if (selectedDate) return dailyLetters[selectedDate];
     // return dailyLetters[new Date().toISOString().split('T')[0]]; // For production, use current date
-    return dailyLetters['2025-01-15']; // For demo, you can change this to get current date
+    return dailyLetters['2025-01-16']; // For demo, you can change this to get current date
   };
 
   // Update todayData on mount and whenever selectedDate changes
