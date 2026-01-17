@@ -370,11 +370,75 @@ letterSalutation: 'Mumuuuuuuuuu🌸',
           audioUrl: '/songs/16/3.webm' // Add your .mp3 file URL here
         }
       ]
+    },
+    '2025-01-17': {
+      title: 'Greatings me strong, bold, and fierce goddess🙇🏽',
+      word: 'ROSE',
+      clues: [
+        '🤔 you gave me something really important within our first few weeks together',
+        '🥰 I used to smell it everyday and it made me feel close to you and made me feel like I was with you',
+        '✨ Between us, you were the first one to give me a flower'
+      ],
+      letter: `
+      ye letter main tere kuch tareef karoonga but I know those won't be enough to describe your qualities.
+
+      I knew you were different from the very start due to the convictions and boundaries you held. The way you stood for yourself unapologetically and the way you spoke your mind without giving two shits about what others think. I saw how you had become this person who was constantly put to test and became molded int a person who started to inspire me and pushed myself to be a better person.
+
+      I did go through your old diaries with you to see how you were practicing rules to impose on yourself while trying grow compassion and control the emotion you felt. Eventhough you will never discuss this with me but I knew this is what you had to do to become the person you are today.
+
+      But through the time as we were continuing our journey, it became quite evident that this strong, brave, fierce and independent women was getting irritated by the small things that I did for her which was something that was hers to do. So generally tu poochne laggi, tum kyun kar rahe ho ye?. You didn't understand the concept of me helping you without thinking what's in it for me.
+
+      As I made you realize that you don't have to do everything for youself and it is okay to let me help you, you started to accept it and even though you still didn't like it, you didn't stop me from doing it.
+
+      I still see this strong, fierce and independent women most of the time but she started to become a princess with Sass and Grace when she started to accept my providing mindset. I felt you were taking things easy on yourself while letting your guard down slowly through time for me to become your knight in not so shining armour.
+
+      Tune mere decisions apne decisions banane laggi and we had a fight about it. You regretted on many occasions listening to me on many things but still you went thought it. You started comprimising youself so much for me which was something you had rarely done before. For me you started convincing yourself with decisions you didn't fully like. You started considering me as a factor for all major decisions you made.
+
+      Being considerate is the biggest form of love and I know you did it for me. I'm really thankful for that. For believing in me and giving me the oppurtunities when at times I'm wrong.
+
+      The same did happened with me really in short amount of time of meeting you that I could break the boundaries and commitment I had made for myself to become the person that can aspire to be the best version of myself for you. I was cold, wasn't really welcoming(as you can see how many friends I have), kept to myself, never pleased anyone at my own cost, sticked to the decision with strong mind and then you came in. I saw me in you and I knew what I had to do to as that I always wished someone to be there for me to help me break those rules and restrictions I had imposed on myself to become the person I'm today.
+
+      For that one person in the world for a lifetime, which is you. 
+
+      It will always be you first for me. Because after my sister, you are the women I saw I have to be better for and there can't be no excuses.
+
+      I know this might be a boring letter, but tune jiss tareeke se mujhe mera character main sudhaar laye, I'm in debt for that. I have a long way to go but I know you will be there for me.
+
+      Eternally grateful,
+      Your Paapuu
+      `,
+      letterPictureCaption: 'A woman to whom I look up to',
+letterSalutation: 'Me Queen here you dropped this👑',
+      polaroid1: '/images/17/polaroids/1.jpg', // Replace with image URL: 'https://example.com/photo1.jpg'
+      polaroid2: '/images/17/polaroids/2.mp4', // Replace with image URL: 'https://example.com/photo2.jpg'
+      polaroid1Caption: 'one to give me a flower first🙈',
+      polaroid2Caption: 'me better half❤️',
+      letterImage: '/images/17/letterpic/l.jpg', // Replace with image URL: 'https://example.com/main-photo.jpg'
+      songs: [
+        {
+          title: 'Kasoor - Prateek Kuhad',
+          subtitle: 'our first concert!',
+          image: '/images/17/songcover/1.mp4',
+          audioUrl: '/songs/17/1.webm' // Add your .mp3 file URL here
+        },
+        {
+          title: 'Shut Up and Dance - Walk the Moon',
+          subtitle: 'I beat youu in bowling heheeeee',
+          image: '/images/17/songcover/2.mp4',
+          audioUrl: '/songs/17/2.webm' // Add your .mp3 file URL here
+        },
+        {
+          title: 'The 1 - Taylor Swift',
+          subtitle: 'pretty much from start I knew',
+          image: '/images/17/songcover/3.mp4',
+          audioUrl: '/songs/17/3.webm' // Add your .mp3 file URL here
+        }
+      ]
     }
   };
 
   // Initialize todayData with the default letter data
-  const [todayData, setTodayData] = useState(dailyLetters['2025-01-16']);
+  const [todayData, setTodayData] = useState(dailyLetters['2025-01-17']);
 
   const wrongEmojis = ['💩', '🐼', '😠', '😢', '😰', '😭'];
   const loveEmojis = ['😍', '🥰', '💕', '😘', '❤️', '💝', '🌟', '✨', '💖', '💗'];
@@ -385,7 +449,7 @@ letterSalutation: 'Mumuuuuuuuuu🌸',
 
   const calculateDaysLeft = () => {
     const targetDate = new Date('2025-02-01');
-    const startDate = new Date('2025-01-16');
+    const startDate = new Date('2025-01-17');
     startDate.setHours(0, 0, 0, 0);
     targetDate.setHours(0, 0, 0, 0);
     const diffTime = targetDate - startDate;
@@ -397,7 +461,7 @@ letterSalutation: 'Mumuuuuuuuuu🌸',
     console.log('Getting today data for selectedDate:', selectedDate);
     if (selectedDate) return dailyLetters[selectedDate];
     // return dailyLetters[new Date().toISOString().split('T')[0]]; // For production, use current date
-    return dailyLetters['2025-01-16']; // For demo, you can change this to get current date
+    return dailyLetters['2025-01-17']; // For demo, you can change this to get current date
   };
 
   // Update todayData on mount and whenever selectedDate changes
