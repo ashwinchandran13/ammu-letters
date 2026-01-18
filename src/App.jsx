@@ -434,11 +434,71 @@ letterSalutation: 'Me Queen here you dropped this👑',
           audioUrl: '/songs/17/3.webm' // Add your .mp3 file URL here
         }
       ]
+    },
+    '2025-01-18': {
+      title: 'Ello Meri Mumu🌸',
+      word: 'AMMU',
+      clues: [
+        '🤔 the name I will call out on happieness, sickness and everything in between',
+        '🥰 the name I will call out on my last breath',
+        '✨ to the name I will start and end all my days with'
+      ],
+      letter: `
+      To the most beautiful women I have laid my eyes on, thank you for accepting  my love.
+
+      I have written poems about your eyes, your lips, your hair etc but no words can describe the beauty you possess.
+
+      My closed eyes prove no match to the vision I see in my mind of you. Your lips which smiles to the end which forms the corner of your cheeks, your nose with ths most cute and subtle round shape which houses your pretty pin, cheeks which blush with the most innocent pink shade, spots that make me go mad on kissing you on your cheek bone, beauty spots below your lips where I run my lips through, your temple which kiss softly to assure you are the most important person in my life, to the hair I felt peace and calmness when hugging you and yet scared to run my fingers through hoping I won't hurt you, the two beauty spots above your belly in a line which I kiss to admire the beauty of it, to the curves of your body I feel sacred, the body of a goddess which I cradle in my arms with deep devotion and respect, the feet I often touch as a gratitude and undying admiration to the person your are, to the ears that choose to hear the most beautiful words I could ever say to you and to the eyes that I'll forever worship that chose me to be the one to love you.
+
+      Your soul that shines through you made me face a mirror so I can love myself in ways I couldn't ever. The beauty you see in me is a reflection of you. You have a soul that proves the goodness in one shall command goodness in others.
+
+      On 14th June 2025, the first time you caught my eye
+      it was not love at first sight
+      Instead a quiet curiosity was
+      planted in my chest and I knew
+      it was only a matter of time before
+      you sunk beneath my bones and
+      nurtured this deep seated familiarity
+      into a love so fierce that I would question
+      if I had even been in love with anything before
+      
+      So me sundari kutty, I love you more than I can express in words.
+
+      eternally at awe by the beauty of you,
+      Your Paapuu
+      `,
+      letterPictureCaption: 'devoted to the beautiful person I fell in love with',
+letterSalutation: 'Ende Ammu🌸',
+      polaroid1: '/images/18/polaroids/1.mp4', // Replace with image URL: 'https://example.com/photo1.jpg'
+      polaroid2: '/images/18/polaroids/2.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
+      polaroid1Caption: 'she came in unexpectedly🙈',
+      polaroid2Caption: 'so I will follow her for life❤️',
+      letterImage: '/images/18/letterpic/l.png', // Replace with image URL: 'https://example.com/main-photo.jpg'
+      songs: [
+        {
+          title: 'Maul Mere Maula - Anwar',
+          subtitle: 'to the eyes I keep getting lost in, to the eyes where I saw my first love',
+          image: '/images/18/songcover/1.png',
+          audioUrl: '/songs/18/1.webm' // Add your .mp3 file URL here
+        },
+        {
+          title: 'Just the way you are - Bruno Mars',
+          subtitle: 'to the smile that races my heart, the words you spoke that soothes my soul',
+          image: '/images/18/songcover/2.png',
+          audioUrl: '/songs/18/2.webm' // Add your .mp3 file URL here
+        },
+        {
+          title: 'Tu Bin Bataye - Rang De Basanti',
+          subtitle: 'to the hair that cover my face makes me feel like Im in the safest place in the world',
+          image: '/images/18/songcover/3.png',
+          audioUrl: '/songs/18/3.webm' // Add your .mp3 file URL here
+        }
+      ]
     }
   };
 
   // Initialize todayData with the default letter data
-  const [todayData, setTodayData] = useState(dailyLetters['2025-01-17']);
+  const [todayData, setTodayData] = useState(dailyLetters['2025-01-18']);
 
   const wrongEmojis = ['💩', '🐼', '😠', '😢', '😰', '😭'];
   const loveEmojis = ['😍', '🥰', '💕', '😘', '❤️', '💝', '🌟', '✨', '💖', '💗'];
@@ -449,7 +509,7 @@ letterSalutation: 'Me Queen here you dropped this👑',
 
   const calculateDaysLeft = () => {
     const targetDate = new Date('2025-02-01');
-    const startDate = new Date('2025-01-17');
+    const startDate = new Date('2025-01-18');
     startDate.setHours(0, 0, 0, 0);
     targetDate.setHours(0, 0, 0, 0);
     const diffTime = targetDate - startDate;
@@ -461,7 +521,7 @@ letterSalutation: 'Me Queen here you dropped this👑',
     console.log('Getting today data for selectedDate:', selectedDate);
     if (selectedDate) return dailyLetters[selectedDate];
     // return dailyLetters[new Date().toISOString().split('T')[0]]; // For production, use current date
-    return dailyLetters['2025-01-17']; // For demo, you can change this to get current date
+    return dailyLetters['2025-01-18']; // For demo, you can change this to get current date
   };
 
   // Update todayData on mount and whenever selectedDate changes
