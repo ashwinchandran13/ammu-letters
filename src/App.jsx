@@ -494,11 +494,63 @@ letterSalutation: 'Ende Ammu🌸',
           audioUrl: '/songs/18/3.webm' // Add your .mp3 file URL here
         }
       ]
+    },
+    '2025-01-19': {
+      title: 'Meri Jeevansathi🌸',
+      word: 'PANDA',
+      clues: [
+        '🤔 you love it and get excited to tell me how many things you have of it',
+        '🥰 the first soft toy I ever bought for you',
+        '✨ abhi bhi samaj nahi aya to tere chamach se leke tere night dress pe tak hain'
+      ],
+      letter: `
+      To the future we will build together. I'm excited to see you in it!!!!!
+
+      Sapne aate hain us-together acheiving things in life. Marrying you is just the keep on recurring theme of my dreams but I don't want to draw a vision of it through my mind. That is something you might have already envisioned and the right for it lies to you.
+
+      Buying our first car who is going to be our Ammini 2 which can fit our family(sapno main hum do hi hain don't worry), going on trips to far off lands experiencing food, culture and nature unbothered, building our own home together with you taking the lead on what should go to interiors, hosting your(our) friends for drinks and dinner, you inducing pottyyy by sitting on a big round bamboo matt while I work, you reading books while I play video games, us eating in silence in our dinner table with music in the background, us cooking in our kitchen with occasional kisses and hugs, wakng up to you every morning finding myself sticking to your side while you are on edge of your bed, us taking care of each other while we both are sick and down with fever, under one blanket in a couch just watching movies with hot popcorn in big bowls, just co existing peacefully and too much in love with each other.
+      
+      Sapne aise which I can feel, sometimes wakes me up in the middle of the night with a smile on my face but to find you not here with me. It hurts. But I remember the time when I used wake from such dreams I would softly kiss your forehead and going back to sleep with a smile on my face.
+
+      I hope the future is kind to us and we are able to acheive all these things together. I just want to stop dreaming and start living it. Start growing old with you as I recognize my new age of life has begun. Everything now is either before you or after you coming into my life.
+
+      I know it would be filled with ups and downs but I know we both will surf through it to make a good jump in our lives.
+
+      hoping you would kiss me good night even when I lose all my teeth while you remain timelessly beautiful,
+      Your Paapuu
+      `,
+      letterPictureCaption: 'the world we will build together',
+  letterSalutation: 'Ende shutumani🌸',
+      polaroid1: '/images/19/polaroids/1.mp4', // Replace with image URL: 'https://example.com/photo1.jpg'
+      polaroid2: '/images/19/polaroids/2.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
+      polaroid1Caption: 'expression👌',
+      polaroid2Caption: 'me thangakudam❤️',
+      letterImage: '/images/19/letterpic/l.png', // Replace with image URL: 'https://example.com/main-photo.jpg'
+      songs: [
+        {
+          title: 'Ilahi - YJHD',
+          subtitle: 'to the places we are going to see together',
+          image: '/images/19/songcover/1.png',
+          audioUrl: '/songs/19/1.webm' // Add your .mp3 file URL here
+        },
+        {
+          title: 'Ti Amo - Dum Maaro Dum',
+          subtitle: 'humari gadi ?',
+          image: '/images/19/songcover/2.png',
+          audioUrl: '/songs/19/2.webm' // Add your .mp3 file URL here
+        },
+        {
+          title: 'Tere Bina Zindagi Se Koi Shikwa To Nahi - Lata Mangeshkar',
+          subtitle: 'existing in our own worlds together',
+          image: '/images/19/songcover/3.png',
+          audioUrl: '/songs/19/3.webm' // Add your .mp3 file URL here
+        }
+      ]
     }
   };
 
   // Initialize todayData with the default letter data
-  const [todayData, setTodayData] = useState(dailyLetters['2025-01-18']);
+  const [todayData, setTodayData] = useState(dailyLetters['2025-01-19']);
 
   const wrongEmojis = ['💩', '🐼', '😠', '😢', '😰', '😭'];
   const loveEmojis = ['😍', '🥰', '💕', '😘', '❤️', '💝', '🌟', '✨', '💖', '💗'];
@@ -509,7 +561,7 @@ letterSalutation: 'Ende Ammu🌸',
 
   const calculateDaysLeft = () => {
     const targetDate = new Date('2025-02-01');
-    const startDate = new Date('2025-01-18');
+    const startDate = new Date('2025-01-19');
     startDate.setHours(0, 0, 0, 0);
     targetDate.setHours(0, 0, 0, 0);
     const diffTime = targetDate - startDate;
@@ -521,7 +573,7 @@ letterSalutation: 'Ende Ammu🌸',
     console.log('Getting today data for selectedDate:', selectedDate);
     if (selectedDate) return dailyLetters[selectedDate];
     // return dailyLetters[new Date().toISOString().split('T')[0]]; // For production, use current date
-    return dailyLetters['2025-01-18']; // For demo, you can change this to get current date
+    return dailyLetters['2025-01-19']; // For demo, you can change this to get current date
   };
 
   // Update todayData on mount and whenever selectedDate changes
