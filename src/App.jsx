@@ -546,11 +546,72 @@ letterSalutation: 'Ende Ammu🌸',
           audioUrl: '/songs/19/3.webm' // Add your .mp3 file URL here
         }
       ]
+    },
+    '2025-01-20': {
+      title: 'Meri priye baby🌸',
+      word: 'RING',
+      clues: [
+        '🤔 the first thing I made with my hands for you',
+        '🥰 I mastered it and envisioned it and gave you the real deal on my happiest day yet',
+        '✨ I made you many of those, it holds a special place in my heart as that paved way to everything I made for you including these letters'
+      ],
+      letter: `
+      distance became our greatest enemy in many of the occasions from the beginning of us.
+
+      It pissed me off and I was reluctant to sit idle and do nothing for you even if you were miles apart. I diverted all the missing feelings and thoughts into making something for you. Thus gifting handmade things for you became my defense mechanism to keep myself busy and distracted from the pain of missing you. But I knew even though I won't admit it at that time as I didn't recognize the feeling, I was just expressing my love for you.
+
+      We couldn't keep each other away for long as soon as we had met in person. The small distances and time you had to spend away became a usual act but not a familiar feeling. I always felt terrible and walked around wih a heavy heart.
+
+      Each time we said our good byes, I always pretended to be strong and happy while a tear drops from the corner of my eyes. You trained me in the arts of saying goodbye, you just increase the difficulty of it as of now with this huge time frame. This is the longest we have been away from each other. And I know this won't be the last time we will be away from each other.
+
+      From leaving you at Ivy Nest at the end of the day, from saying goodbye after leaving you in school for work, from saying goodbye after boarding the train and from saying goodbye at the airport check in gate all lead back to the moment where I know you will be coming back to me with open arms and excitement.
+
+      Separation has taught me a lot about myself and how I feel about you. Separation is never good though, it's a misery I have to endure. A teacher who is an ass.
+
+      so me mu
+      me chundrumani
+      me thangakudam
+      BAS AA MERE PAAS, MUJHE KAHIN NA JAANE DE TERE SE DOOR
+      HUMARI DUNIYA RUKHI HUI HAIN TERE INTAZAAR MAIN
+      KI TU AAYE AUR HUME GHUMAYE TERI CHARO AUR
+
+      waiting for you to come running into my arms,
+      Your Paapuu
+
+      PS: my phone gallery sits still this month. It hasn't been like that even for a week since you met me
+      `,
+      letterPictureCaption: 'rewatched a million times, on that dreaded day when we made that decision for you to leave',
+  letterSalutation: 'My love 🌸',
+      polaroid1: '/images/20/polaroids/1.jpeg', // Replace with image URL: 'https://example.com/photo1.jpg'
+      polaroid2: '/images/20/polaroids/2.mp4', // Replace with image URL: 'https://example.com/photo2.jpg'
+      polaroid1Caption: 'your first gift 🌸',
+      polaroid2Caption: 'distant things I could do😭',
+      letterImage: '/images/20/letterpic/l.mp4', // Replace with image URL: 'https://example.com/main-photo.jpg'
+      songs: [
+        {
+          title: 'Aint No Sunshine - Bill Withers',
+          subtitle: 'goodbye never will be easy',
+          image: '/images/20/songcover/1.jpeg',
+          audioUrl: '/songs/20/1.webm' // Add your .mp3 file URL here
+        },
+        {
+          title: 'Kahin To Hogi Woh - Jaane Tu Ya Jaane Na',
+          subtitle: 'pretend to smile but tears would eventually fall',
+          image: '/images/20/songcover/2.jpeg',
+          audioUrl: '/songs/20/2.webm' // Add your .mp3 file URL here
+        },
+        {
+          title: 'Abhi Na Jao Chod Kar - Mohammed Rafi Asha Bosle',
+          subtitle: 'the last pic I took when you left',
+          image: '/images/20/songcover/3.jpeg',
+          audioUrl: '/songs/20/3.webm' // Add your .mp3 file URL here
+        }
+      ]
     }
   };
 
   // Initialize todayData with the default letter data
-  const [todayData, setTodayData] = useState(dailyLetters['2025-01-19']);
+  const [todayData, setTodayData] = useState(dailyLetters['2025-01-20']);
 
   const wrongEmojis = ['💩', '🐼', '😠', '😢', '😰', '😭'];
   const loveEmojis = ['😍', '🥰', '💕', '😘', '❤️', '💝', '🌟', '✨', '💖', '💗'];
@@ -561,7 +622,7 @@ letterSalutation: 'Ende Ammu🌸',
 
   const calculateDaysLeft = () => {
     const targetDate = new Date('2025-02-01');
-    const startDate = new Date('2025-01-19');
+    const startDate = new Date('2025-01-20');
     startDate.setHours(0, 0, 0, 0);
     targetDate.setHours(0, 0, 0, 0);
     const diffTime = targetDate - startDate;
@@ -573,7 +634,7 @@ letterSalutation: 'Ende Ammu🌸',
     console.log('Getting today data for selectedDate:', selectedDate);
     if (selectedDate) return dailyLetters[selectedDate];
     // return dailyLetters[new Date().toISOString().split('T')[0]]; // For production, use current date
-    return dailyLetters['2025-01-19']; // For demo, you can change this to get current date
+    return dailyLetters['2025-01-20']; // For demo, you can change this to get current date
   };
 
   // Update todayData on mount and whenever selectedDate changes
