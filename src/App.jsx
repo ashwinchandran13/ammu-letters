@@ -607,11 +607,71 @@ letterSalutation: 'Ende Ammu🌸',
           audioUrl: '/songs/20/3.webm' // Add your .mp3 file URL here
         }
       ]
+    },
+    '2025-01-21': {
+      title: 'Me appii💩',
+      word: 'KOLISU',
+      clues: [
+        '🤔 not an english word, first time you wished for something and I bought it for you',
+        '🥰 I wanted to see it on you more than you, first piece of real jewellery I bought for you',
+        '✨ I sometimes have goosebumps when hearing any sound remotely close to it as it feels like you are here with me'
+      ],
+      letter: `
+      I didn't necessarily considered your rose slide as a gift but a way to keep you close to me when you away from me.
+
+      I did have a moment with the gifts you gave me for my birthday. A music box with one of the songs I never would've thought I'll sing with someone. A moon globe which was soft for our eyes. Your first hot wheels for meeee. It was all special and unique to me.
+
+      I do admit I was a bit thrown off jab tu Delhi se mere liye apne dostho ke saath Hello Kitty ka shirt leke aayi. But I do look good with anything so I went with it😎. Repeated patterns with the hello kitty diary but still something special about it.
+
+      I can go on and on with everything that you gave me. But this is not what the letter is about. It's about my greatest gift you gave me.
+
+      The gift of love. With conflicts, arguing, misunderstandings, overthinking, overreacting, self doubt, insecurity and the often questioning of am I good enough for you, a bit harshly but you spoke what I needed to hear. Earful.
+
+      Your love made me walk on a path of knowing myself more and discovering the person I am. I was easy going with my loved ones I thought, but then it hit me that you were actually showing me the reflection of myself for all my actions with your abundance of love, patience and care. You accepted and acknowledged the person I am, made me realize how can I be more better everyday.
+
+      You stood your ground and kept pulled me back from the darkness with those big beautiful eyes. I know the love you have for me is unwavering and unbreakable. You might scold me, get extremely angry at me but I know you will always have that love in you for me. You holding my hands in bed to resolve all the stupid conflicts we had or stupid things I said to you; eye on eye ending with hugs, tears and kisses just expressing the love by forgiving the situation or mostly me.
+
+      You made me realize I was worthy of love. That changed me, on how I saw myself and how I loved my own family. Always I say one thing to you:
+
+      Your affect on me is the greater that I could comprehend.
+
+      Thank you for the love you gave me. I hope I can reciprocate it to you in the best way I can.
+
+      to loving you more than I can express in words eternally,
+      Your Paapuu
+      `,
+      letterPictureCaption: 'gifts are important; to remember the love we have for anyone',
+  letterSalutation: 'Mumuuuuu 🌸',
+      polaroid1: '/images/21/polaroids/1.jpeg', // Replace with image URL: 'https://example.com/photo1.jpg'
+      polaroid2: '/images/21/polaroids/2.mp4', // Replace with image URL: 'https://example.com/photo2.jpg'
+      polaroid1Caption: 'something to remember by 🌸',
+      polaroid2Caption: 'me greatest gift 🙈',
+      letterImage: '/images/21/letterpic/l.jpeg', // Replace with image URL: 'https://example.com/main-photo.jpg'
+      songs: [
+        {
+          title: 'Hedwigs Theme - Harry Potter',
+          subtitle: 'your first hp gift!',
+          image: '/images/21/songcover/1.jpeg',
+          audioUrl: '/songs/21/1.webm' // Add your .mp3 file URL here
+        },
+        {
+          title: 'Something Stupid - Frank Sinatra',
+          subtitle: 'a good amount of stupid is always great',
+          image: '/images/21/songcover/2.jpeg',
+          audioUrl: '/songs/21/2.webm' // Add your .mp3 file URL here
+        },
+        {
+          title: 'Cant Help Falling in Love - Elvis Presley',
+          subtitle: 'will keep on singing always',
+          image: '/images/21/songcover/3.jpeg',
+          audioUrl: '/songs/21/3.webm' // Add your .mp3 file URL here
+        }
+      ]
     }
   };
 
   // Initialize todayData with the default letter data
-  const [todayData, setTodayData] = useState(dailyLetters['2025-01-20']);
+  const [todayData, setTodayData] = useState(dailyLetters['2025-01-21']);
 
   const wrongEmojis = ['💩', '🐼', '😠', '😢', '😰', '😭'];
   const loveEmojis = ['😍', '🥰', '💕', '😘', '❤️', '💝', '🌟', '✨', '💖', '💗'];
@@ -622,7 +682,7 @@ letterSalutation: 'Ende Ammu🌸',
 
   const calculateDaysLeft = () => {
     const targetDate = new Date('2025-02-01');
-    const startDate = new Date('2025-01-20');
+    const startDate = new Date('2025-01-21');
     startDate.setHours(0, 0, 0, 0);
     targetDate.setHours(0, 0, 0, 0);
     const diffTime = targetDate - startDate;
@@ -634,7 +694,7 @@ letterSalutation: 'Ende Ammu🌸',
     console.log('Getting today data for selectedDate:', selectedDate);
     if (selectedDate) return dailyLetters[selectedDate];
     // return dailyLetters[new Date().toISOString().split('T')[0]]; // For production, use current date
-    return dailyLetters['2025-01-20']; // For demo, you can change this to get current date
+    return dailyLetters['2025-01-21']; // For demo, you can change this to get current date
   };
 
   // Update todayData on mount and whenever selectedDate changes
