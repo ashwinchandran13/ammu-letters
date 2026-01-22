@@ -667,11 +667,70 @@ letterSalutation: 'Ende Ammu🌸',
           audioUrl: '/songs/21/3.webm' // Add your .mp3 file URL here
         }
       ]
+    },
+    '2025-01-22': {
+      title: 'elooo gandiniiiiii 𖫪',
+      word: 'MOON',
+      clues: [
+        '🤔 you told me you used gaze at it to get some respite, you admired it for its white spotted beauty',
+        '🥰 you went as far to engrave it on yourself, I couldnt be more sure how important was it to you',
+        '✨ It does change its shape on every night, but the shape you chose was of crescent'
+      ],
+      letter: `
+      I said a lot of times that things that happened in my life are now termed as before you and after you. So I thought this was the last phase of life when you start loving and being with someone now for rest of the life, but hell I was wrong.
+
+      Up until now, I saw three phases of our love itself. Ye honeymoon phase, lovey dovery etc bakchodi nahi but phases of humara pyar towards each other.
+
+      Start main thoda mushkil tha mujhe tera pyar read karna when we were talking and seeing each every evenings after work. You clearly had this way of expressing words with strictness but still soft and caring. Majakiya tu thi, gande joke marna ofcourse, a bit disapointed but glad to see me at the end of the evening when I was running late, saying good night, rarely chatting/calling etc. I knew you were the one eventually, that's when I started giving myself in completely. You literraly held me through every decision and made me feel comfortable with you. But haan you started to literally hold my reigns to me heart. 
+
+      Second phase was when we started living together. I had fever and stuff on the first days, you had to handle kitchen and look after me too. I saw you did stuff for me you might've never did, you cooked like a true bachelor because of which I had became better quickly as I got my good rest. We were mostly surviving on breads and scrambled eggs and khana proper nahi tha with we eating from the same plate. Tere pyaar jo tha from what you were trying to achieve and you did flawlessly inspired me to take lead on many things like one of them being the kitchen. Responsibility ke saath humara pyaar aur badne laga ek doosre ke liye so we both were looked after for. We took care of each other while our worst were thrown at our faces but we battled it out together. 
+
+      Third phase was more of I would say you started becoming flimsy as hell, had to feed you from time to time, physical affections were at all time high(thode rough bhi hone lage but naam to mera hi ayega na), and because of all that I had this thought of taking care of my baby(quite literally🤣) all the time. You became more silly and childish and me? more in love. Problems had new outlook as we knew we had each other's back.
+
+      Things that were common across all the phases from you: strict, ka ka ka laughing, words spoken makes insanity a trait, gundi, bullying me, grabing my ass(1st phase main nahi tha but I saw where your eyes went), kissing me, hugging me, taking a ride on me, domination stuff, seducing me in the most random places(there is a mark still behind main door wall), making me do stuff that I never would do(I meant dancing, singing, composing), eating in silence, deep eye to eye looks yada yada yada...
+
+      I know these phases won't end here and I know this is going to be one hell of a ride. Will keep up with you 👊🏽
+
+      So me ponnuu, me chundrumani, me gundumanii, me moooooon
+
+      On all these phases
+      In case you ever foolishly forget: I am never not thinking of you
+
+      to love you through all the phases until I become sweet worm food,
+      Your Paapuu
+      `,
+      letterPictureCaption: 'later did I know, you became my moon for me to seek respite',
+  letterSalutation: 'Mon Coeur 🌸',
+      polaroid1: '/images/22/polaroids/1.mp4', // Replace with image URL: 'https://example.com/photo1.jpg'
+      polaroid2: '/images/22/polaroids/2.jpeg', // Replace with image URL: 'https://example.com/photo2.jpg'
+      polaroid1Caption: 'budape main bhi twirl hoga🌸',
+      polaroid2Caption: 'bas popcorn yaad na dilana🙈',
+      letterImage: '/images/22/letterpic/l.jpeg', // Replace with image URL: 'https://example.com/main-photo.jpg'
+      songs: [
+        {
+          title: 'Aap ki Ankhon Mein Kuch - Kishore Kumar',
+          subtitle: 'first phase☕️',
+          image: '/images/22/songcover/1.jpeg',
+          audioUrl: '/songs/22/1.webm' // Add your .mp3 file URL here
+        },
+        {
+          title: 'Tune Kahan - Prateek Kuhad',
+          subtitle: 'second phase🍷',
+          image: '/images/22/songcover/2.jpeg',
+          audioUrl: '/songs/22/2.webm' // Add your .mp3 file URL here
+        },
+        {
+          title: 'Love Story - Tay Tay',
+          subtitle: 'third phase 🍼',
+          image: '/images/22/songcover/3.jpeg',
+          audioUrl: '/songs/22/3.webm' // Add your .mp3 file URL here
+        }
+      ]
     }
   };
 
   // Initialize todayData with the default letter data
-  const [todayData, setTodayData] = useState(dailyLetters['2025-01-21']);
+  const [todayData, setTodayData] = useState(dailyLetters['2025-01-22']);
 
   const wrongEmojis = ['💩', '🐼', '😠', '😢', '😰', '😭'];
   const loveEmojis = ['😍', '🥰', '💕', '😘', '❤️', '💝', '🌟', '✨', '💖', '💗'];
@@ -682,7 +741,7 @@ letterSalutation: 'Ende Ammu🌸',
 
   const calculateDaysLeft = () => {
     const targetDate = new Date('2025-02-01');
-    const startDate = new Date('2025-01-21');
+    const startDate = new Date('2025-01-22');
     startDate.setHours(0, 0, 0, 0);
     targetDate.setHours(0, 0, 0, 0);
     const diffTime = targetDate - startDate;
@@ -694,7 +753,7 @@ letterSalutation: 'Ende Ammu🌸',
     console.log('Getting today data for selectedDate:', selectedDate);
     if (selectedDate) return dailyLetters[selectedDate];
     // return dailyLetters[new Date().toISOString().split('T')[0]]; // For production, use current date
-    return dailyLetters['2025-01-21']; // For demo, you can change this to get current date
+    return dailyLetters['2025-01-22']; // For demo, you can change this to get current date
   };
 
   // Update todayData on mount and whenever selectedDate changes
