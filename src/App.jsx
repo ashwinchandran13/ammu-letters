@@ -1323,10 +1323,10 @@ letterSalutation: 'Ende Ammu🌸',
     // Special date view - skip song selection
     if (isSpecial && todayData.specialContent) {
       return (
-        <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex items-center justify-center p-4 md:p-8">
+        <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex items-center justify-center p-4 md:p-8 overflow-x-hidden">
           <div className="max-w-6xl w-full">
             {/* Empty letter area */}
-            <div className="bg-white rounded-3xl shadow-2xl p-4 md:p-8 lg:p-12 min-h-[600px] flex items-center justify-center relative overflow-visible">
+            <div className="bg-white rounded-3xl shadow-2xl p-4 md:p-8 lg:p-12 min-h-[600px] flex items-center justify-center relative overflow-hidden md:overflow-visible">
               {/* Fade message */}
               {showSpecialMessage && (
                 <div className="absolute inset-0 flex items-center justify-center animate-fade-message">
@@ -1338,7 +1338,7 @@ letterSalutation: 'Ende Ammu🌸',
 
               {/* Special content with alternating photos/videos and text */}
               {showSpecialContent && (
-                <div className={`w-full animate-fade-in-slow`}>
+                <div className={`w-full animate-fade-in-slow flex flex-col items-center`}>
                   {/* Top video - small height, half width, no frame */}
                   {todayData.specialTopVideo && (
                     <div className="mb-8 animate-fade-in-slow flex justify-center">
@@ -1367,14 +1367,14 @@ letterSalutation: 'Ende Ammu🌸',
                   </div>
 
                   {/* Letter content area with alternating photos/videos and text - wider container */}
-                  <div className="w-full -mx-4 md:-mx-8 lg:-mx-12 space-y-24">
+                  <div className="w-full max-w-full space-y-24 px-4 md:px-0 md:-mx-8 lg:-mx-12">
                     {todayData.specialContent.map((item, index) => {
                       const isLeft = index % 2 === 0;
                       const videoId = `video-${index}`;
                       const isVideo = isVideoFile(item.media);
                       
-                      // Alternate rotation: left items rotate slightly right, right items rotate slightly left
-                      const rotationClass = isLeft ? 'rotate-2' : '-rotate-2';
+                      // Alternate rotation: left items rotate slightly right, right items rotate slightly left (only on desktop)
+                      const rotationClass = isLeft ? 'md:rotate-2' : 'md:-rotate-2';
                       
                       const handleVideoClick = () => {
                         if (isVideo) {
@@ -1391,12 +1391,12 @@ letterSalutation: 'Ende Ammu🌸',
                       return (
                         <div
                           key={index}
-                          className={`flex flex-col ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-16 items-center md:items-center ${isLeft ? 'animate-slide-in-left' : 'animate-slide-in-right'}`}
+                          className={`flex flex-col ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-16 justify-center items-center md:items-center ${isLeft ? 'animate-slide-in-left' : 'animate-slide-in-right'}`}
                           style={{ animationDelay: `${index * 0.2}s` }}
                         >
                           {/* Media on left or right with polaroid border and tilt - larger size */}
-                          <div className={`flex-shrink-0 w-full md:w-[450px] lg:w-[500px] ${isLeft ? 'md:mr-12' : 'md:ml-12'}`}>
-                            <div className={`bg-white p-4 md:p-6 shadow-xl transform hover:scale-105 transition-transform ${isLeft ? 'md:rotate-2' : 'md:-rotate-2'}`}>
+                          <div className={`flex justify-center w-full md:flex-shrink-0 md:w-[450px] lg:w-[500px] ${isLeft ? 'md:mr-12' : 'md:ml-12'}`}>
+                            <div className={`bg-white p-4 md:p-6 shadow-xl transform hover:scale-105 transition-transform w-full max-w-sm md:max-w-none ${rotationClass}`}>
                               <div className="bg-gradient-to-br from-pink-200 to-purple-200 aspect-square flex items-center justify-center overflow-hidden">
                                 <MediaElement
                                   src={item.media}
@@ -1418,8 +1418,8 @@ letterSalutation: 'Ende Ammu🌸',
                           </div>
 
                           {/* Text on opposite side - centered on mobile, with padding on desktop */}
-                          <div className={`flex-1 w-full ${isLeft ? 'md:text-left md:pr-8 lg:pr-12' : 'md:text-right md:pl-8 lg:pl-12'} text-center animate-fade-in-text`} style={{ animationDelay: `${index * 0.2 + 0.3}s` }}>
-                            <div className="prose prose-pink max-w-none">
+                          <div className={`flex justify-center w-full md:flex-1 ${isLeft ? 'md:text-left md:pr-8 lg:pr-12' : 'md:text-right md:pl-8 lg:pl-12'} animate-fade-in-text`} style={{ animationDelay: `${index * 0.2 + 0.3}s` }}>
+                            <div className={`prose prose-pink max-w-none text-center md:text-left ${isLeft ? 'md:text-left' : 'md:text-right'} w-full max-w-lg md:max-w-none`}>
                               <p className="text-gray-700 leading-relaxed text-base md:text-lg whitespace-pre-line">
                                 {item.text}
                               </p>
