@@ -841,17 +841,17 @@ letterSalutation: 'Ende Ammu🌸',
         {
           media: '/images/23/letterpic/10.jpg',
           text: 'people to travel with. A thing you are embarking to do now. Have fun me chundrumani',
-          caption: 'Neemrana that we have to visit right?😚'
+          caption: '🙉🙈🙊'
         },
         {
           media: '/images/23/letterpic/11.mp4',
-          text: 'people to be silly with. Assuming you might be an agent of chaos and constant laughter',
+          text: 'people to be silly with. Well you are an agent of chaos and inducing laughter at any situation',
           caption: 'Mami sunathi rehti hogi na tum dono ko🤣'
         },
         {
           media: '/images/23/letterpic/12.mp4',
           text: 'people to celebrate occasions with. This video seems fun but chances of getting hit with dandiya seems high',
-          caption: 'its clear to me you did get some time to have real fun 🥰'
+          caption: 'its clear to me between everything, you did get some time to have some real fun 🥰'
         },
         {
           media: '/images/23/letterpic/13.jpg',
@@ -1391,12 +1391,12 @@ letterSalutation: 'Ende Ammu🌸',
                       return (
                         <div
                           key={index}
-                          className={`flex flex-col ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-16 items-start md:items-center ${isLeft ? 'animate-slide-in-left' : 'animate-slide-in-right'}`}
+                          className={`flex flex-col ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-16 items-center md:items-center ${isLeft ? 'animate-slide-in-left' : 'animate-slide-in-right'}`}
                           style={{ animationDelay: `${index * 0.2}s` }}
                         >
                           {/* Media on left or right with polaroid border and tilt - larger size */}
                           <div className={`flex-shrink-0 w-full md:w-[450px] lg:w-[500px] ${isLeft ? 'md:mr-12' : 'md:ml-12'}`}>
-                            <div className={`bg-white p-4 md:p-6 shadow-xl transform hover:scale-105 transition-transform ${rotationClass}`}>
+                            <div className={`bg-white p-4 md:p-6 shadow-xl transform hover:scale-105 transition-transform ${isLeft ? 'md:rotate-2' : 'md:-rotate-2'}`}>
                               <div className="bg-gradient-to-br from-pink-200 to-purple-200 aspect-square flex items-center justify-center overflow-hidden">
                                 <MediaElement
                                   src={item.media}
@@ -1417,8 +1417,8 @@ letterSalutation: 'Ende Ammu🌸',
                             </div>
                           </div>
 
-                          {/* Text on opposite side */}
-                          <div className={`flex-1 ${isLeft ? 'md:text-left' : 'md:text-right'} text-center md:text-left animate-fade-in-text`} style={{ animationDelay: `${index * 0.2 + 0.3}s` }}>
+                          {/* Text on opposite side - centered on mobile, with padding on desktop */}
+                          <div className={`flex-1 w-full ${isLeft ? 'md:text-left md:pr-8 lg:pr-12' : 'md:text-right md:pl-8 lg:pl-12'} text-center animate-fade-in-text`} style={{ animationDelay: `${index * 0.2 + 0.3}s` }}>
                             <div className="prose prose-pink max-w-none">
                               <p className="text-gray-700 leading-relaxed text-base md:text-lg whitespace-pre-line">
                                 {item.text}
