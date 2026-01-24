@@ -17,7 +17,13 @@ const LoveLetterWordSearch = () => {
   const [audio, setAudio] = useState(null);
   const [showCalendar, setShowCalendar] = useState(false);
   const [selectedDate, setSelectedDate] = useState(null);
+  const [showSpecialMessage, setShowSpecialMessage] = useState(false);
+  const [showSpecialContent, setShowSpecialContent] = useState(false);
+  const [unmutedVideoId, setUnmutedVideoId] = useState(null);
   console.log('selectedDate', selectedDate);
+  // Special dates that skip song selection and game
+  const specialDates = ['2025-01-23']; // Add more dates as needed
+
   // Daily letters from Jan 10 to Feb 1
   const dailyLetters = {
     '2025-01-11': {
@@ -726,11 +732,143 @@ letterSalutation: 'Ende Ammu🌸',
           audioUrl: '/songs/22/3.webm' // Add your .mp3 file URL here
         }
       ]
+    },
+    '2025-01-23': {
+      title: 'Ende Ammu🥰',
+      word: 'MOON',
+      clues: [
+        '🤔 you told me you used gaze at it to get some respite, you admired it for its white spotted beauty',
+        '🥰 you went as far to engrave it on yourself, I couldnt be more sure how important was it to you',
+        '✨ It does change its shape on every night, but the shape you chose was of crescent'
+      ],
+      letter: `
+      so me moon,
+
+      you must be proud about yourself for all the hardwork you have put into your passion but with the great help of the people around you now in this journey.
+
+      I hope you appreciate and love your company of your Hamsini gang.
+
+      Have loads of fun and enjoy the journey.
+
+      All the best for your performances and I hope you convey my regards to everyone there.
+
+      Bon voyage me love
+
+      as the days are approaching my excitement is going over the top,
+      please apna khayal rakhna
+
+      in love with you for my time here,
+      Your Paapuu
+      `,
+      letterPictureCaption: 'later did I know, you became my moon for me to seek respite',
+      letterSalutation: 'click on any video to unmute me moon 🌸',
+      polaroid1: '/images/23/polaroids/1.JPG',
+      polaroid2: '/images/23/polaroids/2.jpg',
+      polaroid1Caption: 'budape main bhi twirl hoga🌸',
+      polaroid2Caption: 'bas popcorn yaad na dilana🙈',
+      letterImage: '/images/22/letterpic/l.jpeg',
+      songs: [
+        {
+          title: 'Aap ki Ankhon Mein Kuch - Kishore Kumar',
+          subtitle: 'first phase☕️',
+          image: '/images/22/songcover/1.jpeg',
+          audioUrl: '/songs/22/1.webm'
+        },
+        {
+          title: 'Tune Kahan - Prateek Kuhad',
+          subtitle: 'second phase🍷',
+          image: '/images/22/songcover/2.jpeg',
+          audioUrl: '/songs/22/2.webm'
+        },
+        {
+          title: 'Love Story - Tay Tay',
+          subtitle: 'third phase 🍼',
+          image: '/images/22/songcover/3.jpeg',
+          audioUrl: '/songs/22/3.webm'
+        }
+      ],
+      // Special content for dates that skip song/game
+      specialMessage: 'aaj koi gaana ya game nahi hain as...',
+      specialTitle: 'Today is about your love for dance', // Separate title for special letter page
+      specialTopVideo: '/images/23/letterpic/title.mp4', // Video at top - small height, half width, no frame
+      specialBottomVideo: '/images/23/letterpic/end-title.mp4', // Video at bottom - small height, half width, no frame
+      specialContent: [
+        {
+          media: '/images/23/letterpic/1.jpg',
+          text: 'from my perspective, I see how expressive and joyful you are when you are practising your art. You showed me your Arengettom first and thus began my journey to see this great artform through you.',
+          caption: 'My favorite one have to say 🌸'
+        },
+        {
+          media: '/images/23/letterpic/2.mp4',
+          text: 'you told me how you were able to manage everything including work to prepare. You said you were exhausted but still managed to give it all your best. ',
+          caption: 'with such grace you practiced 🙈'
+        },
+        {
+          media: '/images/23/letterpic/3.jpg',
+          text: 'you made everyone feel proud that you were doing something you really loved and that too with great dedication. You showed me you dancing as little krishna along with your didi which I think was your first recorded performance. I felt so proud seeing it and I hope that little krishna has always been proud of you',
+          caption: 'yamu is so proud of her ammu chittaa 🙈'
+        },
+        {
+          media: '/images/23/letterpic/4.jpg',
+          text: 'but as I see its not just about your love for dance. I saw you found love and joy around your dance which kept you going through everything despite you had to tackle so much things.',
+          caption: 'reminds me of what I see when I hug you 😂'
+        },
+        {
+          media: '/images/23/letterpic/5.jpg',
+          text: 'it was your Hamsini gang. Poeple who I thought you just learnt and trained with but boy I was wrong.',
+          caption: 'ye guse main kyun hain 😤'
+        },
+        {
+          media: '/images/23/letterpic/6.mp4',
+          text: 'a guru and his students bonding over the silly mistakes they commit',
+          caption: 'well you do confuse other people too 😛'
+        },
+        {
+          media: '/images/23/letterpic/7.jpg',
+          text: 'you sharing your exhaustion together with everyone. I would say a shoulder to lean on but from this pic its more of thighs to put head on',
+          caption: 'human pankha bana rkha hain '
+        },
+        {
+          media: '/images/23/letterpic/8.mp4',
+          text: 'people to bully. raises so many question but Im guessing yamraj sawari kar rha hain to chill?',
+          caption: 'pavam bhaya, kya kya sehte hain🥲'
+        },
+        {
+          media: '/images/23/letterpic/9.mp4',
+          text: 'people to loose sleep with. Purre raath khi khi khi hota tha kya???',
+          caption: 'bhavshya dekha to mera kuch ata pata mila?😚'
+        },
+        {
+          media: '/images/23/letterpic/10.jpg',
+          text: 'people to travel with. A thing you are embarking to do now. Have fun me chundrumani',
+          caption: 'Neemrana that we have to visit right?😚'
+        },
+        {
+          media: '/images/23/letterpic/11.mp4',
+          text: 'people to be silly with. Assuming you might be an agent of chaos and continuos laughter',
+          caption: 'Mami sunathi rehti hogi na tum dono ko🤣'
+        },
+        {
+          media: '/images/23/letterpic/12.mp4',
+          text: 'people to celebrate occasions with. This video seems fun but chances of getting hit with dandiya seems high',
+          caption: 'its clear to me you did get some time to have real fun 🥰'
+        },
+        {
+          media: '/images/23/letterpic/13.jpg',
+          text: 'people you felt your best with. Im glad you told me about everyone, I would love to meet everyone someday',
+          caption: 'the support and care you had through your practice and your performances is what I have to thank them for'
+        },
+        {
+          media: '/images/23/letterpic/final.mp4',
+          text: 'above all that I see this girl who kept to her vision through hardword and dedication, I see a girl who achieved what she wanted to and excelled in it by surrounding herself with the people she wanted to grow with',
+          caption: 'Im guessing this video is pretty old but I see me ammu kutty manifesting 🤣'
+        },
+      ]
     }
   };
 
   // Initialize todayData with the default letter data
-  const [todayData, setTodayData] = useState(dailyLetters['2025-01-22']);
+  const [todayData, setTodayData] = useState(dailyLetters['2025-01-23']);
 
   const wrongEmojis = ['💩', '🐼', '😠', '😢', '😰', '😭'];
   const loveEmojis = ['😍', '🥰', '💕', '😘', '❤️', '💝', '🌟', '✨', '💖', '💗'];
@@ -741,7 +879,7 @@ letterSalutation: 'Ende Ammu🌸',
 
   const calculateDaysLeft = () => {
     const targetDate = new Date('2025-02-01');
-    const startDate = new Date('2025-01-22');
+    const startDate = new Date('2025-01-23');
     startDate.setHours(0, 0, 0, 0);
     targetDate.setHours(0, 0, 0, 0);
     const diffTime = targetDate - startDate;
@@ -753,7 +891,11 @@ letterSalutation: 'Ende Ammu🌸',
     console.log('Getting today data for selectedDate:', selectedDate);
     if (selectedDate) return dailyLetters[selectedDate];
     // return dailyLetters[new Date().toISOString().split('T')[0]]; // For production, use current date
-    return dailyLetters['2025-01-22']; // For demo, you can change this to get current date
+    return dailyLetters['2025-01-23']; // For demo, you can change this to get current date
+  };
+
+  const isSpecialDate = (dateStr) => {
+    return specialDates.includes(dateStr);
   };
 
   // Update todayData on mount and whenever selectedDate changes
@@ -761,7 +903,43 @@ letterSalutation: 'Ende Ammu🌸',
     const data = getTodayData();
     console.log('Setting todayData:', data);
     setTodayData(data);
+    // Reset special content states when date changes
+    setShowSpecialMessage(false);
+    setShowSpecialContent(false);
+    setUnmutedVideoId(null);
   }, [selectedDate]); // Runs on mount (when selectedDate is null) and whenever selectedDate changes
+
+  // Handle special date message fade in/out
+  useEffect(() => {
+    const currentDate = selectedDate || '2025-01-23';
+    if (currentPage === 'songs' && todayData && todayData.specialContent && isSpecialDate(currentDate)) {
+      // Reset states first
+      setShowSpecialMessage(false);
+      setShowSpecialContent(false);
+      
+      // Show message after a brief delay
+      const timer1 = setTimeout(() => {
+        setShowSpecialMessage(true);
+      }, 500);
+
+      // Hide message and show content after fade out
+      const timer2 = setTimeout(() => {
+        setShowSpecialMessage(false);
+        setTimeout(() => {
+          setShowSpecialContent(true);
+        }, 1000); // Wait for fade out to complete
+      }, 4000); // Show message for 4 seconds
+
+      return () => {
+        clearTimeout(timer1);
+        clearTimeout(timer2);
+      };
+    } else {
+      // Reset if not special date
+      setShowSpecialMessage(false);
+      setShowSpecialContent(false);
+    }
+  }, [currentPage, todayData, selectedDate]);
   const gridSize = 8;
 
   const generateGrid = () => {
@@ -935,6 +1113,9 @@ letterSalutation: 'Ende Ammu🌸',
     setCelebrationKisses([]);
     setSelectedSong(null);
     setAudio(null);
+    setUnmutedVideoId(null);
+    setShowSpecialMessage(false);
+    setShowSpecialContent(false);
   };
 
   const getAvailableDates = () => {
@@ -972,6 +1153,7 @@ letterSalutation: 'Ende Ammu🌸',
     console.log('dateStr', dateStr);
     setSelectedDate(dateStr);
     setShowCalendar(false);
+    // Don't auto-navigate - let user click "Shuru kare aaj ka?" button
   };
 
   const handleSongSelect = (song) => {
@@ -1015,8 +1197,10 @@ letterSalutation: 'Ende Ammu🌸',
   };
 
   // Helper component to render either image or video
-  const MediaElement = ({ src, alt, className }) => {
+  const MediaElement = ({ src, alt, className, videoId, unmutedVideoId, onVideoClick, allowUnmute = false }) => {
     if (isVideoFile(src)) {
+      // Only allow unmute if explicitly enabled (for special letter page)
+      const isUnmuted = allowUnmute && videoId === unmutedVideoId;
       return (
         <video 
           src={src} 
@@ -1024,8 +1208,10 @@ letterSalutation: 'Ende Ammu🌸',
           className={className}
           autoPlay
           loop
-          muted
+          muted={!isUnmuted}
           playsInline
+          onClick={allowUnmute ? onVideoClick : undefined}
+          style={allowUnmute ? { cursor: 'pointer' } : {}}
         />
       );
     }
@@ -1131,6 +1317,236 @@ letterSalutation: 'Ende Ammu🌸',
 
   // Songs Selection Page
   if (currentPage === 'songs') {
+    const currentDate = selectedDate || '2025-01-23';
+    const isSpecial = isSpecialDate(currentDate);
+
+    // Special date view - skip song selection
+    if (isSpecial && todayData.specialContent) {
+      return (
+        <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex items-center justify-center p-4 md:p-8">
+          <div className="max-w-6xl w-full">
+            {/* Empty letter area */}
+            <div className="bg-white rounded-3xl shadow-2xl p-4 md:p-8 lg:p-12 min-h-[600px] flex items-center justify-center relative overflow-visible">
+              {/* Fade message */}
+              {showSpecialMessage && (
+                <div className="absolute inset-0 flex items-center justify-center animate-fade-message">
+                  <p className="text-2xl md:text-3xl font-semibold text-pink-600 text-center px-4 animate-pulse-slow">
+                    {todayData.specialMessage || 'there is no song or game today because...'}
+                  </p>
+                </div>
+              )}
+
+              {/* Special content with alternating photos/videos and text */}
+              {showSpecialContent && (
+                <div className={`w-full animate-fade-in-slow`}>
+                  {/* Top video - small height, half width, no frame */}
+                  {todayData.specialTopVideo && (
+                    <div className="mb-8 animate-fade-in-slow flex justify-center">
+                      <div className="w-1/2 max-w-2xl">
+                        <video
+                          src={todayData.specialTopVideo}
+                          className="w-full h-48 md:h-64 object-cover rounded-lg shadow-lg"
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                        />
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Special title below video */}
+                  <div className="text-center mb-12 animate-slide-down" style={{ animationDelay: '0.3s' }}>
+                    <Sparkles className="w-12 h-12 mx-auto text-pink-500 mb-4" />
+                    <h2 className="text-3xl font-bold text-pink-600 mb-2">
+                      {todayData.specialTitle || todayData.title}
+                    </h2>
+                    {todayData.letterSalutation && (
+                      <p className="text-xl font-semibold text-gray-800 mb-4">{todayData.letterSalutation},</p>
+                    )}
+                  </div>
+
+                  {/* Letter content area with alternating photos/videos and text - wider container */}
+                  <div className="w-full -mx-4 md:-mx-8 lg:-mx-12 space-y-24">
+                    {todayData.specialContent.map((item, index) => {
+                      const isLeft = index % 2 === 0;
+                      const videoId = `video-${index}`;
+                      const isVideo = isVideoFile(item.media);
+                      
+                      // Alternate rotation: left items rotate slightly right, right items rotate slightly left
+                      const rotationClass = isLeft ? 'rotate-2' : '-rotate-2';
+                      
+                      const handleVideoClick = () => {
+                        if (isVideo) {
+                          if (unmutedVideoId === videoId) {
+                            // If clicking the same video, mute it
+                            setUnmutedVideoId(null);
+                          } else {
+                            // Unmute this video and mute others
+                            setUnmutedVideoId(videoId);
+                          }
+                        }
+                      };
+
+                      return (
+                        <div
+                          key={index}
+                          className={`flex flex-col ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-16 items-start md:items-center ${isLeft ? 'animate-slide-in-left' : 'animate-slide-in-right'}`}
+                          style={{ animationDelay: `${index * 0.2}s` }}
+                        >
+                          {/* Media on left or right with polaroid border and tilt - larger size */}
+                          <div className={`flex-shrink-0 w-full md:w-[450px] lg:w-[500px] ${isLeft ? 'md:mr-12' : 'md:ml-12'}`}>
+                            <div className={`bg-white p-4 md:p-6 shadow-xl transform hover:scale-105 transition-transform ${rotationClass}`}>
+                              <div className="bg-gradient-to-br from-pink-200 to-purple-200 aspect-square flex items-center justify-center overflow-hidden">
+                                <MediaElement
+                                  src={item.media}
+                                  alt={`Memory ${index + 1}`}
+                                  className="w-full h-full object-cover"
+                                  videoId={isVideo ? videoId : null}
+                                  unmutedVideoId={unmutedVideoId}
+                                  onVideoClick={handleVideoClick}
+                                  allowUnmute={true}
+                                />
+                              </div>
+                              {/* Caption below media */}
+                              {item.caption && (
+                                <p className="text-center mt-3 text-gray-600 italic text-sm md:text-base">
+                                  {item.caption}
+                                </p>
+                              )}
+                            </div>
+                          </div>
+
+                          {/* Text on opposite side */}
+                          <div className={`flex-1 ${isLeft ? 'md:text-left' : 'md:text-right'} text-center md:text-left animate-fade-in-text`} style={{ animationDelay: `${index * 0.2 + 0.3}s` }}>
+                            <div className="prose prose-pink max-w-none">
+                              <p className="text-gray-700 leading-relaxed text-base md:text-lg whitespace-pre-line">
+                                {item.text}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+
+                  {/* Letter closing if exists */}
+                  {todayData.letter && todayData.letter.trim() && (
+                    <div className="mt-8 pt-8 border-t border-pink-200">
+                      <div className="prose prose-pink max-w-none text-center">
+                        <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+                          {todayData.letter}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Bottom video - small height, half width, no frame */}
+                  {todayData.specialBottomVideo && (
+                    <div className="mt-12 mb-8 animate-fade-in-slow flex justify-center">
+                      <div className="w-1/2 max-w-2xl">
+                        <video
+                          src={todayData.specialBottomVideo}
+                          className="w-full h-48 md:h-64 object-cover rounded-lg shadow-lg"
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                        />
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Action buttons */}
+                  <div className="space-y-3 pt-6">
+                    <button
+                      onClick={sendKisses}
+                      className="w-full bg-gradient-to-r from-pink-500 to-red-500 text-white font-semibold py-4 px-6 rounded-full hover:from-pink-600 hover:to-red-600 transform hover:scale-105 transition-all duration-300 shadow-lg"
+                    >
+                      Send Virtual Kisses 💋
+                    </button>
+                    <a
+                      href="https://wa.me/918139839442?text=Me%20Paapu"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full bg-gradient-to-r from-green-500 to-emerald-500 text-white font-semibold py-4 px-6 rounded-full hover:from-green-600 hover:to-emerald-600 transform hover:scale-105 transition-all duration-300 shadow-lg text-center"
+                    >
+                      Respond to the Love Letter 💬
+                    </a>
+                    <button
+                      onClick={resetGame}
+                      className="w-full bg-gradient-to-r from-gray-400 to-gray-500 text-white font-semibold py-4 px-6 rounded-full hover:from-gray-500 hover:to-gray-600 transform hover:scale-105 transition-all duration-300 shadow-lg flex items-center justify-center gap-2"
+                    >
+                      <RotateCcw className="w-5 h-5" />
+                      Reset Love Letter
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+
+          <style>{`
+            @keyframes fade-message {
+              0% { opacity: 0; transform: scale(0.95); }
+              20% { opacity: 1; transform: scale(1); }
+              80% { opacity: 1; transform: scale(1); }
+              100% { opacity: 0; transform: scale(0.95); }
+            }
+            .animate-fade-message {
+              animation: fade-message 4s ease-in-out forwards;
+            }
+            @keyframes pulse-slow {
+              0%, 100% { opacity: 1; }
+              50% { opacity: 0.8; }
+            }
+            .animate-pulse-slow {
+              animation: pulse-slow 2s ease-in-out infinite;
+            }
+            @keyframes fade-in-slow {
+              0% { opacity: 0; }
+              100% { opacity: 1; }
+            }
+            .animate-fade-in-slow {
+              animation: fade-in-slow 1.5s ease-out forwards;
+            }
+            @keyframes slide-down {
+              0% { opacity: 0; transform: translateY(-30px); }
+              100% { opacity: 1; transform: translateY(0); }
+            }
+            .animate-slide-down {
+              animation: slide-down 1s ease-out forwards;
+            }
+            @keyframes slide-in-left {
+              0% { opacity: 0; transform: translateX(-50px); }
+              100% { opacity: 1; transform: translateX(0); }
+            }
+            @keyframes slide-in-right {
+              0% { opacity: 0; transform: translateX(50px); }
+              100% { opacity: 1; transform: translateX(0); }
+            }
+            .animate-slide-in-left {
+              animation: slide-in-left 0.8s ease-out forwards;
+              opacity: 0;
+            }
+            .animate-slide-in-right {
+              animation: slide-in-right 0.8s ease-out forwards;
+              opacity: 0;
+            }
+            @keyframes fade-in-text {
+              0% { opacity: 0; }
+              100% { opacity: 1; }
+            }
+            .animate-fade-in-text {
+              animation: fade-in-text 1s ease-out forwards;
+              opacity: 0;
+            }
+          `}</style>
+        </div>
+      );
+    }
+
+    // Regular song selection view
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex items-center justify-center p-4">
         <div className="max-w-4xl w-full">
@@ -1144,7 +1560,7 @@ letterSalutation: 'Ende Ammu🌸',
             <p className="text-center text-pink-600 font-medium mb-6">Choose a track to start vibing while you solve the puzzle ✨</p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-              {todayData.songs.map((song, index) => (
+              {todayData.songs && todayData.songs.map((song, index) => (
                 <button
                   key={index}
                   onClick={() => handleSongSelect(song)}
