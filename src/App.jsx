@@ -928,7 +928,7 @@ letterSalutation: 'Ende Ammu🌸',
       ],
       // Special content for dates that skip song/game
       specialMessage: 'I will read this letter when...',
-      specialTitle: 'to not be sad when we are at a distance and how you still share your day with me', // Separate title for special letter page
+      specialTitle: 'to not be sad when we are at a distance and how you will still share your day with me', // Separate title for special letter page
       // specialTopVideo: '/images/24/letterpic/title.jpeg', // Video at top - small height, half width, no frame
       // specialBottomVideo: '/images/23/letterpic/end-title.mp4', // Video at bottom - small height, half width, no frame
       specialContent: [
