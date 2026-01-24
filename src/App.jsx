@@ -22,13 +22,14 @@ const LoveLetterWordSearch = () => {
   const [unmutedVideoId, setUnmutedVideoId] = useState(null);
   console.log('selectedDate', selectedDate);
   // Special dates that skip song selection and game
-  const specialDates = ['2025-01-23']; // Add more dates as needed
+  const specialDates = ['2025-01-23', '2025-01-24']; // Add more dates as needed
 
   // Daily letters from Jan 10 to Feb 1
   const dailyLetters = {
     '2025-01-11': {
       title: 'Helloww me lovvee🌸',
       word: 'HUMMUS',
+      daysMessage: "Ma'am, aapke ke liye ek kath likhi hain but pehle ek puzzle complete karo wo dekne ke liye Find the word to unlock today's letter.",
       clues: [
         'Something that you said was a favourite condiment to be eaten with anything',
         'It still sits untouched in our dairy section',
@@ -84,6 +85,7 @@ letterSalutation: 'Enn Ammukutty',
     '2025-01-12': {
       title: 'Ello Chundrumani! 💕',
       word: 'JASMINE',
+      daysMessage: "Ma'am, aapke ke liye ek kath likhi hain but pehle ek puzzle complete karo wo dekne ke liye Find the word to unlock today's letter.",
       clues: [
         'You introduced me to creating a smell of home, you made the decision for it',
         'A flower you chose because you like it',
@@ -139,6 +141,7 @@ letterSalutation: 'Me Mumu',
     '2025-01-13': {
       title: 'ello mumu 🎀',
       word: 'ENCANTO',
+      daysMessage: "Ma'am, aapke ke liye ek kath likhi hain but pehle ek puzzle complete karo wo dekne ke liye Find the word to unlock today's letter.",
       clues: [
         '🎵 You like and sing songs from it',
         '🏠 A magical family lives together in a special house.',
@@ -196,6 +199,7 @@ letterSalutation: 'Me saaxy aurat 💃🏽',
     '2025-01-14': {
       title: 'ende ammu kochee 🥰',
       word: 'AMAL',
+      daysMessage: "Ma'am, aapke ke liye ek kath likhi hain but pehle ek puzzle complete karo wo dekne ke liye Find the word to unlock today's letter.",
       clues: [
         '🤔 I always wondered this word was, just thought it was a name',
         '🏠 but it means so much for you for many years, that you keep it as a key for all devices',
@@ -252,6 +256,7 @@ letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
     '2025-01-15': {
       title: 'Hi me Moooon 🥰',
       word: 'HOME',
+      daysMessage: "Ma'am, aapke ke liye ek kath likhi hain but pehle ek puzzle complete karo wo dekne ke liye Find the word to unlock today's letter.",
       clues: [
         '🤔 I thought it was just a place but the true meaning was defined by you',
         '🥰 It awaits your return though and so do I eagerly',
@@ -310,6 +315,7 @@ letterSalutation: 'Me world🌍',
     '2025-01-16': {
       title: 'elloo boo🥰',
       word: 'AMMINI',
+      daysMessage: "Ma'am, aapke ke liye ek kath likhi hain but pehle ek puzzle complete karo wo dekne ke liye Find the word to unlock today's letter.",
       clues: [
         '🤔 she helped me see you every day from the very beginning',
         '🥰 she helped us cover distances which she has never travelled before',
@@ -380,6 +386,7 @@ letterSalutation: 'Mumuuuuuuuuu🌸',
     '2025-01-17': {
       title: 'Greatings me strong, bold, and fierce goddess🙇🏽',
       word: 'ROSE',
+      daysMessage: "Ma'am, aapke ke liye ek kath likhi hain but pehle ek puzzle complete karo wo dekne ke liye Find the word to unlock today's letter.",
       clues: [
         '🤔 you gave me something really important within our first few weeks together',
         '🥰 I used to smell it everyday and it made me feel close to you and made me feel like I was with you',
@@ -444,6 +451,7 @@ letterSalutation: 'Me Queen here you dropped this👑',
     '2025-01-18': {
       title: 'Ello Meri Mumu🌸',
       word: 'AMMU',
+      daysMessage: "Ma'am, aapke ke liye ek kath likhi hain but pehle ek puzzle complete karo wo dekne ke liye Find the word to unlock today's letter.",
       clues: [
         '🤔 the name I will call out on happieness, sickness and everything in between',
         '🥰 the name I will call out on my last breath',
@@ -504,6 +512,7 @@ letterSalutation: 'Ende Ammu🌸',
     '2025-01-19': {
       title: 'Meri Jeevansathi🌸',
       word: 'PANDA',
+      daysMessage: "Ma'am, aapke ke liye ek kath likhi hain but pehle ek puzzle complete karo wo dekne ke liye Find the word to unlock today's letter.",
       clues: [
         '🤔 you love it and get excited to tell me how many things you have of it',
         '🥰 the first soft toy I ever bought for you',
@@ -556,6 +565,7 @@ letterSalutation: 'Ende Ammu🌸',
     '2025-01-20': {
       title: 'Meri priye baby🌸',
       word: 'RING',
+      daysMessage: "Ma'am, aapke ke liye ek kath likhi hain but pehle ek puzzle complete karo wo dekne ke liye Find the word to unlock today's letter.",
       clues: [
         '🤔 the first thing I made with my hands for you',
         '🥰 I mastered it and envisioned it and gave you the real deal on my happiest day yet',
@@ -617,6 +627,7 @@ letterSalutation: 'Ende Ammu🌸',
     '2025-01-21': {
       title: 'Me appii💩',
       word: 'KOLISU',
+      daysMessage: "Ma'am, aapke ke liye ek kath likhi hain but pehle ek puzzle complete karo wo dekne ke liye Find the word to unlock today's letter.",
       clues: [
         '🤔 not an english word, first time you wished for something and I bought it for you',
         '🥰 I wanted to see it on you more than you, first piece of real jewellery I bought for you',
@@ -677,6 +688,7 @@ letterSalutation: 'Ende Ammu🌸',
     '2025-01-22': {
       title: 'elooo gandiniiiiii 𖫪',
       word: 'MOON',
+      daysMessage: "Ma'am, aapke ke liye ek kath likhi hain but pehle ek puzzle complete karo wo dekne ke liye Find the word to unlock today's letter.",
       clues: [
         '🤔 you told me you used gaze at it to get some respite, you admired it for its white spotted beauty',
         '🥰 you went as far to engrave it on yourself, I couldnt be more sure how important was it to you',
@@ -736,6 +748,7 @@ letterSalutation: 'Ende Ammu🌸',
     '2025-01-23': {
       title: 'Ende Ammu🥰',
       word: 'MOON',
+      daysMessage: "Ma'am, aapke ke liye ek kath likhi hain but pehle ek puzzle complete karo wo dekne ke liye Find the word to unlock today's letter.",
       clues: [
         '🤔 you told me you used gaze at it to get some respite, you admired it for its white spotted beauty',
         '🥰 you went as far to engrave it on yourself, I couldnt be more sure how important was it to you',
@@ -864,11 +877,142 @@ letterSalutation: 'Ende Ammu🌸',
           caption: 'Im guessing this video is pretty old but I see me ammu kutty manifesting 🤣'
         },
       ]
+    },
+    '2025-01-24': {
+      title: 'Me mumu in Poland today!! 🥰',
+      word: 'MOON',
+      daysMessage: "Ma'am since the final week is approaching, we start a series of letters which we can reopen at different states of our journey",
+      clues: [
+        '🤔 you told me you used gaze at it to get some respite, you admired it for its white spotted beauty',
+        '🥰 you went as far to engrave it on yourself, I couldnt be more sure how important was it to you',
+        '✨ It does change its shape on every night, but the shape you chose was of crescent'
+      ],
+      letter: `
+      ende ammu koche,
+
+      I remember most of the details about your life even when I'm not with you just because you let me in with all the stories.
+
+      I will continue to keep your stories within me and cherish them as if they are my own. As I think that would be the best form of love I can give you, by keeping pieces of your adventures within me
+
+      I hope you won't ever stop with it because I won't ever not a give an ear to it.
+  
+      to all the time we have to share our stories with each other,
+      Your Paapuu
+      `,
+      letterPictureCaption: 'later did I know, you became my moon for me to seek respite',
+      letterSalutation: 'click on any video to unmute me moon 🌸',
+      polaroid1: '/images/24/polaroids/1.jpeg',
+      polaroid2: '/images/24/polaroids/2.jpeg',
+      polaroid1Caption: '🌸',
+      polaroid2Caption: '❤️',
+      letterImage: '/images/22/letterpic/l.jpeg',
+      songs: [
+        {
+          title: 'Aap ki Ankhon Mein Kuch - Kishore Kumar',
+          subtitle: 'first phase☕️',
+          image: '/images/22/songcover/1.jpeg',
+          audioUrl: '/songs/22/1.webm'
+        },
+        {
+          title: 'Tune Kahan - Prateek Kuhad',
+          subtitle: 'second phase🍷',
+          image: '/images/22/songcover/2.jpeg',
+          audioUrl: '/songs/22/2.webm'
+        },
+        {
+          title: 'Love Story - Tay Tay',
+          subtitle: 'third phase 🍼',
+          image: '/images/22/songcover/3.jpeg',
+          audioUrl: '/songs/22/3.webm'
+        }
+      ],
+      // Special content for dates that skip song/game
+      specialMessage: 'I will read this letter when...',
+      specialTitle: 'to not be sad when we are at a distance and how you still share your day with me', // Separate title for special letter page
+      // specialTopVideo: '/images/24/letterpic/title.jpeg', // Video at top - small height, half width, no frame
+      // specialBottomVideo: '/images/23/letterpic/end-title.mp4', // Video at bottom - small height, half width, no frame
+      specialContent: [
+        {
+          media: '/images/24/letterpic/1.jpeg',
+          text: 'lets start from the top. You asked me an opinion on getting a tattoo onto days of knowing me when you had to go to TN. Thats when I learnt how meaningful moon and stars was for you.',
+          caption: '18th June 2025: you gotta tattooo 🥰'
+        },
+        {
+          media: '/images/24/letterpic/2.jpeg',
+          text: 'your occasional selfies when you were away before going to school made my day everytime I saw it',
+          caption: '6th July 2025: ende chudrikutiiiiii 🙈'
+        },
+        {
+          media: '/images/24/letterpic/3.mp4',
+          text: 'when you went to Banglore to celebrate Yamu\'s b\'day. Do you remember usse pehle we were not able to buy anything for her from here?',
+          caption: '10th July 2025: kithii cuteee hainnn like her chittaaaa 🙈'
+        },
+        {
+          media: '/images/24/letterpic/4.jpeg',
+          text: 'and to celebrate Snicks b\'day. You told me how much time it\'s been since you met her.',
+          caption: '12th July 2025: an awaited reunion 🥰'
+        },
+        {
+          media: '/images/24/letterpic/5.jpeg',
+          text: 'your first short return to Delhi. You met your friends and spend your time with your fam. You went to Shayu\'s place too!',
+          caption: '4th September 2025: I wrote poems for you till your return😍'
+        },
+        {
+          media: '/images/24/letterpic/6.jpeg',
+          text: 'not really a distance thing but I travelled from Thrissur after attending my friends wedding to Aishu\'s place after you guys where coming back from not so Onam celeb just for me to see you for some time in saree 🙈 phir hum nikle Palakkad ke liye',
+          caption: '15th September 2025: my jaws dropped when you sent me this pic in the morning 😍 '
+        },
+        {
+          media: '/images/24/letterpic/7.jpeg',
+          text: 'you went to your Ammayis place to celebrate Diwali while I was at my home. I really wanted to celebrate it together and uske liye main patake liye the but thought we would delay it to new years and well',
+          caption: '20th October 2025: it rained the whole day still thoda time mila patake phodane ke liye 🙈'
+        },
+        {
+          media: '/images/24/letterpic/8.mp4',
+          text: 'you went to Banglore for housewarming. Decor dekke tujhe humare ghar main thoda decor or placement change karne ka idea aya.',
+          caption: '1st November 2025: you captured Yamu\'s chaos well 🙉🙈'
+        },
+        {
+          media: '/images/24/letterpic/9.jpeg',
+          text: 'your Chennai trip to meet your dance society friends. Rupak ka dedication btw🫡. Also you did pottery!!',
+          caption: '9th December 2025: this was your last working week btw 😊'
+        },
+        {
+          media: '/images/24/letterpic/10.mp4',
+          text: 'Rupak ke licorice abhi bhi fridge main betha hain waiting for you to come.',
+          caption: '11th December 2025: 🌼'
+        },
+        {
+          media: '/images/24/letterpic/11.jpeg',
+          text: 'And thus began our longest time apart. But you did a lot over this time. You met your peeps!!',
+          caption: '29th December 2025: Mc\'d trip with your boondi ke ladoos ❤️'
+        },
+        {
+          media: '/images/24/letterpic/12.jpeg',
+          text: 'you played video games with me 😍. We started playing Stardew Valley in new years. From doing thing like chores in the morning in game to going to sleep together in game was the best way to emulate what we actually wanted to do.',
+          caption: '1st January 2025: ab kab khelenge 😭'
+        },
+        {
+          media: '/images/24/letterpic/13.mp4',
+          text: 'you met Ananya and had lunch at dhaba and had a drink. Shopping ke liye gye but I don\'t think you bought much.',
+          caption: '2nd January 2025: 🤣😘'
+        },
+        {
+          media: '/images/24/letterpic/14.mp4',
+          text: 'in between all the meetups, seeing your juniors, going to dance class everyday you helped me know how you were living your life away from me and that gave me a sense of belonging and comfort.',
+          caption: '19th January 2025: 🤣'
+        },
+        {
+          media: '/images/24/letterpic/15.jpeg',
+          text: 'I wanted to see you before you took off and thanks for letting me know always up until just right now to tell me what\'s going on with you',
+          caption: '24th January 2025: 🤣'
+        },
+      ]
     }
   };
 
   // Initialize todayData with the default letter data
-  const [todayData, setTodayData] = useState(dailyLetters['2025-01-23']);
+  const [todayData, setTodayData] = useState(dailyLetters['2025-01-24']);
 
   const wrongEmojis = ['💩', '🐼', '😠', '😢', '😰', '😭'];
   const loveEmojis = ['😍', '🥰', '💕', '😘', '❤️', '💝', '🌟', '✨', '💖', '💗'];
@@ -879,7 +1023,7 @@ letterSalutation: 'Ende Ammu🌸',
 
   const calculateDaysLeft = () => {
     const targetDate = new Date('2025-02-01');
-    const startDate = new Date('2025-01-23');
+    const startDate = new Date('2025-01-24');
     startDate.setHours(0, 0, 0, 0);
     targetDate.setHours(0, 0, 0, 0);
     const diffTime = targetDate - startDate;
@@ -891,7 +1035,7 @@ letterSalutation: 'Ende Ammu🌸',
     console.log('Getting today data for selectedDate:', selectedDate);
     if (selectedDate) return dailyLetters[selectedDate];
     // return dailyLetters[new Date().toISOString().split('T')[0]]; // For production, use current date
-    return dailyLetters['2025-01-23']; // For demo, you can change this to get current date
+    return dailyLetters['2025-01-24']; // For demo, you can change this to get current date
   };
 
   const isSpecialDate = (dateStr) => {
@@ -911,7 +1055,7 @@ letterSalutation: 'Ende Ammu🌸',
 
   // Handle special date message fade in/out
   useEffect(() => {
-    const currentDate = selectedDate || '2025-01-23';
+    const currentDate = selectedDate || '2025-01-24';
     if (currentPage === 'songs' && todayData && todayData.specialContent && isSpecialDate(currentDate)) {
       // Reset states first
       setShowSpecialMessage(false);
@@ -1299,9 +1443,7 @@ letterSalutation: 'Ende Ammu🌸',
               <p className="text-6xl font-bold text-purple-600">{daysLeft}</p>
             </div>
             <p className="text-gray-600 leading-relaxed">
-              Ma'am, aapke ke liye ek kath likhi hain but pehle ek puzzle complete karo wo dekne ke liye 
-              <br />
-              Find the word to unlock today's letter.
+              {todayData.daysMessage || "Ma'am, aapke ke liye ek kath likhi hain but pehle ek puzzle complete karo wo dekne ke liye Find the word to unlock today's letter."}
             </p>
             <button
               onClick={() => setCurrentPage('songs')}
@@ -1317,7 +1459,7 @@ letterSalutation: 'Ende Ammu🌸',
 
   // Songs Selection Page
   if (currentPage === 'songs') {
-    const currentDate = selectedDate || '2025-01-23';
+    const currentDate = selectedDate || '2025-01-24';
     const isSpecial = isSpecialDate(currentDate);
 
     // Special date view - skip song selection
