@@ -859,7 +859,7 @@ letterSalutation: 'Ende Ammu🌸',
           caption: 'the support and care you had through your practice and your performances is what I have to thank them for'
         },
         {
-          media: '/images/23/letterpic/final.mp4',
+          media: '/images/23/letterpic/14.mp4',
           text: 'above all that I see this girl who kept to her vision through hardword and dedication, I see a girl who achieved what she wanted to and excelled in it by surrounding herself with the people she wanted to grow with',
           caption: 'Im guessing this video is pretty old but I see me ammu kutty manifesting 🤣'
         },
