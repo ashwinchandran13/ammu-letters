@@ -845,7 +845,7 @@ letterSalutation: 'Ende Ammu🌸',
         },
         {
           media: '/images/23/letterpic/11.mp4',
-          text: 'people to be silly with. Assuming you might be an agent of chaos and continuos laughter',
+          text: 'people to be silly with. Assuming you might be an agent of chaos and constant laughter',
           caption: 'Mami sunathi rehti hogi na tum dono ko🤣'
         },
         {
