@@ -1342,10 +1342,10 @@ letterSalutation: 'Ende Ammu🌸',
                   {/* Top video - small height, half width, no frame */}
                   {todayData.specialTopVideo && (
                     <div className="mb-8 animate-fade-in-slow flex justify-center">
-                      <div className="w-1/2 max-w-2xl">
+                      <div className="w-full">
                         <video
                           src={todayData.specialTopVideo}
-                          className="w-full h-48 md:h-64 object-cover rounded-lg shadow-lg"
+                          className="w-full h-48 md:h-96 object-cover rounded-lg shadow-lg"
                           autoPlay
                           loop
                           muted
@@ -1444,10 +1444,10 @@ letterSalutation: 'Ende Ammu🌸',
                   {/* Bottom video - small height, half width, no frame */}
                   {todayData.specialBottomVideo && (
                     <div className="mt-12 mb-8 animate-fade-in-slow flex justify-center">
-                      <div className="w-1/2 max-w-2xl">
+                      <div className="w-full">
                         <video
                           src={todayData.specialBottomVideo}
-                          className="w-full h-48 md:h-64 object-cover rounded-lg shadow-lg"
+                          className="w-full h-48 md:h-96 object-cover rounded-lg shadow-lg"
                           autoPlay
                           loop
                           muted
