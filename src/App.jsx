@@ -240,7 +240,7 @@ letterSalutation: 'Ende Ammu kochinu🙋🏼‍♀️',
           audioUrl: '/songs/14/1.webm' // Add your .mp3 file URL here
         },
         {
-          title: 'Ente Kannil Ninakkaai - Banglore Days',
+          title: 'Ente Kannil Ninakkaai - Bangalore Days',
           subtitle: 'to the kid in you I love so much',
           image: '/images/14/songcover/2.png',
           audioUrl: '/songs/14/2.webm' // Add your .mp3 file URL here
@@ -944,7 +944,7 @@ letterSalutation: 'Ende Ammu🌸',
         },
         {
           media: '/images/24/letterpic/3.mp4',
-          text: 'when you went to Banglore to celebrate Yamu\'s b\'day. Do you remember usse pehle we were not able to buy anything for her from here?',
+          text: 'when you went to Bangalore to celebrate Yamu\'s b\'day. Do you remember usse pehle we were not able to buy anything for her from here?',
           caption: '10th July 2025: kithii cuteee hainnn like her chittaaaa 🙈'
         },
         {
@@ -969,7 +969,7 @@ letterSalutation: 'Ende Ammu🌸',
         },
         {
           media: '/images/24/letterpic/8.mp4',
-          text: 'you went to Banglore for housewarming. Decor dekke tujhe humare ghar main thoda decor or placement change karne ka idea aya.',
+          text: 'you went to Bangalore for housewarming. Decor dekke tujhe humare ghar main thoda decor or placement change karne ka idea aya.',
           caption: '1st November 2025: you captured Yamu\'s chaos well 🙉🙈'
         },
         {
