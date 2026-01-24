@@ -764,8 +764,8 @@ letterSalutation: 'Ende Ammu🌸',
       letterSalutation: 'click on any video to unmute me moon 🌸',
       polaroid1: '/images/23/polaroids/1.JPG',
       polaroid2: '/images/23/polaroids/2.jpg',
-      polaroid1Caption: 'budape main bhi twirl hoga🌸',
-      polaroid2Caption: 'bas popcorn yaad na dilana🙈',
+      polaroid1Caption: '🌸',
+      polaroid2Caption: '❤️',
       letterImage: '/images/22/letterpic/l.jpeg',
       songs: [
         {
