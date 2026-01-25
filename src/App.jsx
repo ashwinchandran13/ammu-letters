@@ -22,7 +22,7 @@ const LoveLetterWordSearch = () => {
   const [unmutedVideoId, setUnmutedVideoId] = useState(null);
   console.log('selectedDate', selectedDate);
   // Special dates that skip song selection and game
-  const specialDates = ['2025-01-23', '2025-01-24']; // Add more dates as needed
+  const specialDates = ['2025-01-23', '2025-01-24', '2025-01-25']; // Add more dates as needed
 
   // Daily letters from Jan 10 to Feb 1
   const dailyLetters = {
@@ -1008,11 +1008,110 @@ letterSalutation: 'Ende Ammu🌸',
           caption: '24th January 2025: 🤣'
         },
       ]
+    },
+    '2025-01-25': {
+      title: 'Me princess 👸🏽',
+      word: 'MOON',
+      daysMessage: "Ma'am since the final week is approaching, we start a series of letters which we can reopen at different states of our journey",
+      clues: [
+        '🤔 you told me you used gaze at it to get some respite, you admired it for its white spotted beauty',
+        '🥰 you went as far to engrave it on yourself, I couldnt be more sure how important was it to you',
+        '✨ It does change its shape on every night, but the shape you chose was of crescent'
+      ],
+      letter: `
+      mumu kocheeeee,
+
+      during hard days we might not find anything to choose from to get some respite on any situation we are facing.
+
+      With all the ability I have, I will try to create a reason for us to smile everyday. I did learnt from the best after all.
+  
+      to all the smiles we are going to share in our lives,
+      Your Paapuu
+      `,
+      letterPictureCaption: 'later did I know, you became my moon for me to seek respite',
+      letterSalutation: 'click on any video to unmute me moon 🌸',
+      polaroid1: '/images/25/polaroids/1.jpeg',
+      polaroid2: '/images/25/polaroids/2.jpeg',
+      polaroid1Caption: 'never told you this but 🌸',
+      polaroid2Caption: 'I loved your smile the most ❤️',
+      letterImage: '/images/22/letterpic/l.jpeg',
+      songs: [
+        {
+          title: 'Aap ki Ankhon Mein Kuch - Kishore Kumar',
+          subtitle: 'first phase☕️',
+          image: '/images/22/songcover/1.jpeg',
+          audioUrl: '/songs/22/1.webm'
+        },
+        {
+          title: 'Tune Kahan - Prateek Kuhad',
+          subtitle: 'second phase🍷',
+          image: '/images/22/songcover/2.jpeg',
+          audioUrl: '/songs/22/2.webm'
+        },
+        {
+          title: 'Love Story - Tay Tay',
+          subtitle: 'third phase 🍼',
+          image: '/images/22/songcover/3.jpeg',
+          audioUrl: '/songs/22/3.webm'
+        }
+      ],
+      // Special content for dates that skip song/game
+      specialMessage: 'We will read this letter when...',
+      specialTitle: 'we need a reason to smile', // Separate title for special letter page
+      // specialTopVideo: '/images/25/letterpic/title.jpeg', // Video at top - small height, half width, no frame
+      // specialBottomVideo: '/images/23/letterpic/end-title.mp4', // Video at bottom - small height, half width, no frame
+      specialContent: [
+        {
+          media: '/images/25/letterpic/1.mp4',
+          text: 'I got to know your love for beaches. We did our first chap chap in Alappuzha beach. Laughed our asses off when we had to run for cover as it started to rain. And we had our golden hour moment right there.',
+          caption: 'We will carry on this tradition Mu😘'
+        },
+        {
+          media: '/images/25/letterpic/2.jpeg',
+          text: 'your craziness which keeps me at my toes. I go on high alert as you are flimsy too, which I need to make sure in between all crazy you would still be fine',
+          caption: 'if you see closely your legs floating 😱'
+        },
+        {
+          media: '/images/25/letterpic/3.jpeg',
+          text: 'all the earings I had brought, always required me to go through many ladies store to find something which I\'m completely happy with. It is something I like to do and with huge grin on my face.',
+          caption: 'seeing you wear it was another kind of happiness 🙈'
+        },
+        {
+          media: '/images/25/letterpic/4.mp4',
+          text: 'Feeding you and you going crazy on food. Getting pieces that you can eat, helping you with bones in chicken became my routine and thinking about will always makes me smile',
+          caption: 'maine banaya food ke liye aisa reaction kabhi nahi diya 😤'
+        },
+        {
+          media: '/images/25/letterpic/5.jpeg',
+          text: 'kuch bhi naya try karna, be it bowling or hoping for a ride; we are always up for it. It makes my day when I see you go though a range of emotions.',
+          caption: 'we will keep on trying out new things together😍'
+        },
+        {
+          media: '/images/25/letterpic/6.jpeg',
+          text: 'sometimes I do wonder what runs on those brains. But I try not to think too much much about it as it would make me confuse too. Wo harkathe mujhe humesha yaad bhi rahenge',
+          caption: 'here mu with vasco bro 💪🏼 '
+        },
+        {
+          media: '/images/25/letterpic/7.mp4',
+          text: 'seeing you in your own space was the kind of happiness I never expected to feel. Unbothered, free and just having fun.',
+          caption: 'Expression queen 🙈'
+        },
+        {
+          media: '/images/25/letterpic/8.jpeg',
+          text: 'making me included in your stuff. Eventhough a bit girly, I love to do those things with you me moon',
+          caption: 'your ongoing attempt to make a sundaran💪🏼'
+        },
+        {
+          media: '/images/25/letterpic/9.jpeg',
+          text: 'we really have a ton of reasons to smile but the biggest one is that you keep hanging on to my arms',
+          caption: 'willing to go to war, just to see you smile😊'
+        }
+      ]
     }
   };
 
   // Initialize todayData with the default letter data
-  const [todayData, setTodayData] = useState(dailyLetters['2025-01-24']);
+  const [todayData, setTodayData] = useState(dailyLetters['2025-01-25']);
 
   const wrongEmojis = ['💩', '🐼', '😠', '😢', '😰', '😭'];
   const loveEmojis = ['😍', '🥰', '💕', '😘', '❤️', '💝', '🌟', '✨', '💖', '💗'];
@@ -1023,7 +1122,7 @@ letterSalutation: 'Ende Ammu🌸',
 
   const calculateDaysLeft = () => {
     const targetDate = new Date('2025-02-01');
-    const startDate = new Date('2025-01-24');
+    const startDate = new Date('2025-01-25');
     startDate.setHours(0, 0, 0, 0);
     targetDate.setHours(0, 0, 0, 0);
     const diffTime = targetDate - startDate;
@@ -1035,7 +1134,7 @@ letterSalutation: 'Ende Ammu🌸',
     console.log('Getting today data for selectedDate:', selectedDate);
     if (selectedDate) return dailyLetters[selectedDate];
     // return dailyLetters[new Date().toISOString().split('T')[0]]; // For production, use current date
-    return dailyLetters['2025-01-24']; // For demo, you can change this to get current date
+    return dailyLetters['2025-01-25']; // For demo, you can change this to get current date
   };
 
   const isSpecialDate = (dateStr) => {
@@ -1055,7 +1154,7 @@ letterSalutation: 'Ende Ammu🌸',
 
   // Handle special date message fade in/out
   useEffect(() => {
-    const currentDate = selectedDate || '2025-01-24';
+    const currentDate = selectedDate || '2025-01-25';
     if (currentPage === 'songs' && todayData && todayData.specialContent && isSpecialDate(currentDate)) {
       // Reset states first
       setShowSpecialMessage(false);
@@ -1459,7 +1558,7 @@ letterSalutation: 'Ende Ammu🌸',
 
   // Songs Selection Page
   if (currentPage === 'songs') {
-    const currentDate = selectedDate || '2025-01-24';
+    const currentDate = selectedDate || '2025-01-25';
     const isSpecial = isSpecialDate(currentDate);
 
     // Special date view - skip song selection
