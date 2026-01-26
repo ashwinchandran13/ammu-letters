@@ -22,7 +22,7 @@ const LoveLetterWordSearch = () => {
   const [unmutedVideoId, setUnmutedVideoId] = useState(null);
   console.log('selectedDate', selectedDate);
   // Special dates that skip song selection and game
-  const specialDates = ['2025-01-23', '2025-01-24', '2025-01-25']; // Add more dates as needed
+  const specialDates = ['2025-01-23', '2025-01-24', '2025-01-25', '2025-01-26']; // Add more dates as needed
 
   // Daily letters from Jan 10 to Feb 1
   const dailyLetters = {
@@ -1107,11 +1107,93 @@ letterSalutation: 'Ende Ammu🌸',
           caption: 'willing to go to war, just to see you smile😊'
         }
       ]
+    },
+    '2025-01-26': {
+      title: 'Me kundipenne 😘',
+      word: 'MOON',
+      daysMessage: "Ma'am since the final week is approaching, we start a series of letters which we can reopen at different states of our journey",
+      clues: [
+        '🤔 you told me you used gaze at it to get some respite, you admired it for its white spotted beauty',
+        '🥰 you went as far to engrave it on yourself, I couldnt be more sure how important was it to you',
+        '✨ It does change its shape on every night, but the shape you chose was of crescent'
+      ],
+      letter: `
+      ammuuuuuuu,
+
+      it's hard knowing I won't be able to hug you in any day. To embrace and to appreciate you for the women you are.
+
+      I feel the kid Ammu having the softest breath on my chest as I\'m thinking of how to make you feel the most loved girl in the world.
+
+      I deeply desire you, me amore
+      Having spent days with you in me arms have made me realize how dark the days without you will be
+
+      to embracing my world for everyday to the end of my days,
+      Your Paapuu
+      `,
+      letterPictureCaption: 'later did I know, you became my moon for me to seek respite',
+      letterSalutation: 'click on any video to unmute me moon 🌸',
+      polaroid1: '/images/26/polaroids/1.jpeg',
+      polaroid2: '/images/26/polaroids/2.jpeg',
+      polaroid1Caption: 'everytime I embraced you 🌸',
+      polaroid2Caption: 'I felt heaven ❤️',
+      letterImage: '/images/22/letterpic/l.jpeg',
+      songs: [
+        {
+          title: 'Aap ki Ankhon Mein Kuch - Kishore Kumar',
+          subtitle: 'first phase☕️',
+          image: '/images/22/songcover/1.jpeg',
+          audioUrl: '/songs/22/1.webm'
+        },
+        {
+          title: 'Tune Kahan - Prateek Kuhad',
+          subtitle: 'second phase🍷',
+          image: '/images/22/songcover/2.jpeg',
+          audioUrl: '/songs/22/2.webm'
+        },
+        {
+          title: 'Love Story - Tay Tay',
+          subtitle: 'third phase 🍼',
+          image: '/images/22/songcover/3.jpeg',
+          audioUrl: '/songs/22/3.webm'
+        }
+      ],
+      // Special content for dates that skip song/game
+      specialMessage: 'We will read this letter when...',
+      specialTitle: 'we need a hug 🫂', // Separate title for special letter page
+      // specialTopVideo: '/images/25/letterpic/title.jpeg', // Video at top - small height, half width, no frame
+      // specialBottomVideo: '/images/23/letterpic/end-title.mp4', // Video at bottom - small height, half width, no frame
+      specialContent: [
+        {
+          media: '/images/26/letterpic/1.mp4',
+          text: 'I\'m writing this letter as I felt too much like hugging you. When this particular scene in the Kathakali patham was happening, I distinctively remember how much I felt like hugging you right there in Changampuzha park. I saw how the divinity in their affection as they were performing, I always felt something pure and sacred every time you wrapped your arms around me.',
+          caption: 'Us 😘'
+        },
+        {
+          media: '/images/26/letterpic/2.jpeg',
+          text: 'when we walk around in crowded places, I always had this urge to enclose you around my arms and keep you in my shell like a turtle. I don\'t know if that is a protective instint but it make me feel I\'m just embracing and proudly walking with my world. I know you are strong, fierce and independent but to be allowed to do this make me feel my importance in your life.',
+          caption: 'reason I bent my knees when hugging is to hold more of you'
+        },
+        {
+          media: '/images/26/letterpic/3.jpeg',
+          text: 'I do intrude your space when we are even eating. Having you just have a meal with me creates an urge to love you more in me. I rub my face and head against your shoulders and chin as I can\'t hug you on that moment. Maybe it\'s my upbringing to always eat with your family rule made me feel love at that moment; just to be grateful for your presence.',
+          caption: 'khane se pehle we should hug 😤🙈'
+        },
+        {
+          media: '/images/26/letterpic/4.jpeg',
+          text: 'If my arms and my sides of my body has it\'s blood flow stopped just for me to hug you as closely and tightly while we slept the whole night, I would call that as a good night. To wake up with you still embraced around my arms would be a good morning for me. The game gave me a good reason to realize what I had with me the entire time and now how I\'m fretting it till the day you return to me.',
+          caption: 'for a moment only, but I felt the feeling how it used to be😭'
+        },
+        {
+          media: '/images/26/letterpic/5.mp4',
+          text: 'I feel grief and loss for the times we have lost not holding onto each other. All the stupid reasons seem defyingly unjust. Being close seems never enough, holding onto each other seemed all weights lighter than a feather. Your putting your face against my chest while I\'m breathing into your hair felt like the greatest thing I have felt in my life.',
+          caption: 'to stay close to you is more than a heaven 😍'
+        },
+      ]
     }
   };
 
   // Initialize todayData with the default letter data
-  const [todayData, setTodayData] = useState(dailyLetters['2025-01-25']);
+  const [todayData, setTodayData] = useState(dailyLetters['2025-01-26']);
 
   const wrongEmojis = ['💩', '🐼', '😠', '😢', '😰', '😭'];
   const loveEmojis = ['😍', '🥰', '💕', '😘', '❤️', '💝', '🌟', '✨', '💖', '💗'];
@@ -1122,7 +1204,7 @@ letterSalutation: 'Ende Ammu🌸',
 
   const calculateDaysLeft = () => {
     const targetDate = new Date('2025-02-01');
-    const startDate = new Date('2025-01-25');
+    const startDate = new Date('2025-01-26');
     startDate.setHours(0, 0, 0, 0);
     targetDate.setHours(0, 0, 0, 0);
     const diffTime = targetDate - startDate;
@@ -1134,7 +1216,7 @@ letterSalutation: 'Ende Ammu🌸',
     console.log('Getting today data for selectedDate:', selectedDate);
     if (selectedDate) return dailyLetters[selectedDate];
     // return dailyLetters[new Date().toISOString().split('T')[0]]; // For production, use current date
-    return dailyLetters['2025-01-25']; // For demo, you can change this to get current date
+    return dailyLetters['2025-01-26']; // For demo, you can change this to get current date
   };
 
   const isSpecialDate = (dateStr) => {
@@ -1154,7 +1236,7 @@ letterSalutation: 'Ende Ammu🌸',
 
   // Handle special date message fade in/out
   useEffect(() => {
-    const currentDate = selectedDate || '2025-01-25';
+    const currentDate = selectedDate || '2025-01-26';
     if (currentPage === 'songs' && todayData && todayData.specialContent && isSpecialDate(currentDate)) {
       // Reset states first
       setShowSpecialMessage(false);
@@ -1558,7 +1640,7 @@ letterSalutation: 'Ende Ammu🌸',
 
   // Songs Selection Page
   if (currentPage === 'songs') {
-    const currentDate = selectedDate || '2025-01-25';
+    const currentDate = selectedDate || '2025-01-26';
     const isSpecial = isSpecialDate(currentDate);
 
     // Special date view - skip song selection
