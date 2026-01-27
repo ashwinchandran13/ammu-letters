@@ -22,7 +22,7 @@ const LoveLetterWordSearch = () => {
   const [unmutedVideoId, setUnmutedVideoId] = useState(null);
   console.log('selectedDate', selectedDate);
   // Special dates that skip song selection and game
-  const specialDates = ['2025-01-23', '2025-01-24', '2025-01-25', '2025-01-26']; // Add more dates as needed
+  const specialDates = ['2025-01-23', '2025-01-24', '2025-01-25', '2025-01-26', '2025-01-27']; // Add more dates as needed
 
   // Daily letters from Jan 10 to Feb 1
   const dailyLetters = {
@@ -1189,11 +1189,102 @@ letterSalutation: 'Ende Ammu🌸',
           caption: 'to stay close to you is more than a heaven 😍'
         },
       ]
-    }
+    },
+    '2025-01-27': {
+      title: 'Me sundiriiiiii 😘',
+      word: 'MOON',
+      daysMessage: "Ma'am since the final week is approaching, we start a series of letters which we can reopen at different states of our journey",
+      clues: [
+        '🤔 you told me you used gaze at it to get some respite, you admired it for its white spotted beauty',
+        '🥰 you went as far to engrave it on yourself, I couldnt be more sure how important was it to you',
+        '✨ It does change its shape on every night, but the shape you chose was of crescent'
+      ],
+      letter: `
+      mumumeeeee 😘,
+
+      kyun hi chinta ser pe uthake rakhna as we have resolved the greatest worry of our lives: which is finding each other in the big world.
+
+      I think about off all the chances and how slim it was to meet you. FIr main kahan worry karoonga? The proportions are way too big.
+
+      I do worry about you and you do the same for me. It's the only worry that matters. That worry has our pure love and concern for each other.
+
+      Even when we are far the only thing that sooths me is that you know how concerned I'm with your wellbeing and have the confidence you'll keep yourself well for me and so will I for you.
+
+      So mumu,
+
+      Chinta nahi
+      Sab changi se
+      Hum haina ek saath
+      kuch hone ka nahi
+      bas hum hone ka
+
+      to bulding a worry free home with you in it,
+      Your Paapuu
+      `,
+      letterPictureCaption: 'later did I know, you became my moon for me to seek respite',
+      letterSalutation: 'click on any video to unmute me moon 🌸',
+      polaroid1: '/images/27/polaroids/1.jpeg',
+      polaroid2: '/images/27/polaroids/2.jpeg',
+      polaroid1Caption: 'meesa worries 🌸',
+      polaroid2Caption: 'yousa chills ❤️',
+      letterImage: '/images/22/letterpic/l.jpeg',
+      songs: [
+        {
+          title: 'Aap ki Ankhon Mein Kuch - Kishore Kumar',
+          subtitle: 'first phase☕️',
+          image: '/images/22/songcover/1.jpeg',
+          audioUrl: '/songs/22/1.webm'
+        },
+        {
+          title: 'Tune Kahan - Prateek Kuhad',
+          subtitle: 'second phase🍷',
+          image: '/images/22/songcover/2.jpeg',
+          audioUrl: '/songs/22/2.webm'
+        },
+        {
+          title: 'Love Story - Tay Tay',
+          subtitle: 'third phase 🍼',
+          image: '/images/22/songcover/3.jpeg',
+          audioUrl: '/songs/22/3.webm'
+        }
+      ],
+      // Special content for dates that skip song/game
+      specialMessage: 'We will read this letter when...',
+      specialTitle: 'we are worried 🥲', // Separate title for special letter page
+      // specialTopVideo: '/images/25/letterpic/title.jpeg', // Video at top - small height, half width, no frame
+      // specialBottomVideo: '/images/23/letterpic/end-title.mp4', // Video at bottom - small height, half width, no frame
+      specialContent: [
+        {
+          media: '/images/27/letterpic/1.mp4',
+          text: 'tune mujhe sikhaya ki abhi ke abhi kuch bhi solve nahi ho sakta, it takes time aur hum kabhi bhi kahi nahi jayenge. Cheeze can be delayed if it is not breathing on our neck. ',
+          caption: 'sukoon milta hain when we know we are taking our time of our lives 😘'
+        },
+        {
+          media: '/images/27/letterpic/2.jpeg',
+          text: 'it\'s us vs the problem, jo kuch bhi hume bother karega hum uska saamna karenge humesha. I will walk along with you to see it through and I know you will do the same for me cuz jo kuch bhi ho wo hum dono ka problem hoga humesha. I promise you, main kuch bhi tujhe bataonga.',
+          caption: 'ek saath hur kadam me moon ❤️'
+        },
+        {
+          media: '/images/27/letterpic/3.mp4',
+          text: 'tu utni non chalant kuch nahi hain thankfully, I know the weight you carry. But what inspires me the most is the effortless grace you carry along with every situation. I will give that credit to kutti ammu in you. Kuch bhi ho tu kutty ammu state mere saath off karke nahi rakhegi.',
+          caption: 'wo bachpana ke saath kahan adulting ayegi 🙈'
+        },
+        {
+          media: '/images/27/letterpic/4.jpeg',
+          text: 'wo worries jab tere saath hota hun, kabhi nahi rehte mere dimage main because I know I\'ll find a way out and you being catalyst it is easy. Haan kuch worries jaise ki surprise plan karna, gift pasand ayega ki nahi etc mere saath rehni chahiye. It makes me better for you.',
+          caption: 'jo cheeze humne apne liye kiye, all that became a boon for us'
+        },
+        {
+          media: '/images/27/letterpic/5.mp4',
+          text: 'akhir hume hasne and bachpana apnane ke liye koi karann nahi chahiye, ek saath wo humesha rehta hi hain. Fir kahan worries leke aayenge meri jahapana?',
+          caption: 'just being ourselves with each other is enough for all worries  😍'
+        },
+      ]
+    },
   };
 
   // Initialize todayData with the default letter data
-  const [todayData, setTodayData] = useState(dailyLetters['2025-01-26']);
+  const [todayData, setTodayData] = useState(dailyLetters['2025-01-27']);
 
   const wrongEmojis = ['💩', '🐼', '😠', '😢', '😰', '😭'];
   const loveEmojis = ['😍', '🥰', '💕', '😘', '❤️', '💝', '🌟', '✨', '💖', '💗'];
@@ -1204,7 +1295,7 @@ letterSalutation: 'Ende Ammu🌸',
 
   const calculateDaysLeft = () => {
     const targetDate = new Date('2025-02-01');
-    const startDate = new Date('2025-01-26');
+    const startDate = new Date('2025-01-27');
     startDate.setHours(0, 0, 0, 0);
     targetDate.setHours(0, 0, 0, 0);
     const diffTime = targetDate - startDate;
@@ -1216,7 +1307,7 @@ letterSalutation: 'Ende Ammu🌸',
     console.log('Getting today data for selectedDate:', selectedDate);
     if (selectedDate) return dailyLetters[selectedDate];
     // return dailyLetters[new Date().toISOString().split('T')[0]]; // For production, use current date
-    return dailyLetters['2025-01-26']; // For demo, you can change this to get current date
+    return dailyLetters['2025-01-27']; // For demo, you can change this to get current date
   };
 
   const isSpecialDate = (dateStr) => {
@@ -1236,7 +1327,7 @@ letterSalutation: 'Ende Ammu🌸',
 
   // Handle special date message fade in/out
   useEffect(() => {
-    const currentDate = selectedDate || '2025-01-26';
+    const currentDate = selectedDate || '2025-01-27';
     if (currentPage === 'songs' && todayData && todayData.specialContent && isSpecialDate(currentDate)) {
       // Reset states first
       setShowSpecialMessage(false);
@@ -1640,7 +1731,7 @@ letterSalutation: 'Ende Ammu🌸',
 
   // Songs Selection Page
   if (currentPage === 'songs') {
-    const currentDate = selectedDate || '2025-01-26';
+    const currentDate = selectedDate || '2025-01-27';
     const isSpecial = isSpecialDate(currentDate);
 
     // Special date view - skip song selection
